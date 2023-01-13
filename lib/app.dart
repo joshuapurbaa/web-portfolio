@@ -21,7 +21,7 @@ class App extends StatelessWidget {
         ],
         child,
       ),
-      title: 'Web Portfolio',
+      title: 'Portfolio Joshua',
       routerConfig: AppRoute.router,
     );
   }
