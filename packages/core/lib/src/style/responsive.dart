@@ -165,7 +165,7 @@ ResponsiveValue<dynamic> certificateSectionHeight(
   BuildContext context, [
   double defaultValue = 630,
   double valueTablet = 630,
-  double valueMobile = 400,
+  double valueMobile = 450,
 ]) {
   return ResponsiveValue(
     context,
