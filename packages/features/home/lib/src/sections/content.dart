@@ -66,50 +66,7 @@ class _ContentState extends State<Content> {
                 OnhoverWidget(
                   builder: (isHovered) {
                     if (isHovered) {
-                      return Positioned.fill(
-                        child: GestureDetector(
-                          onTap: () {
-                            showDialog(
-                              context: context,
-                              builder: (context) => DialogView(
-                                portfolio: portfolio,
-                              ),
-                            );
-                          },
-                          child: ClipRRect(
-                            borderRadius:
-                                const BorderRadius.all(Radius.circular(10)),
-                            child: GlassMorphism(
-                              heightGlass: double.infinity,
-                              startGradient: 0.2,
-                              endGradient: 0.1,
-                              begin: Alignment.centerLeft,
-                              end: Alignment.centerRight,
-                              child: Column(
-                                mainAxisAlignment:
-                                    MainAxisAlignment.spaceEvenly,
-                                children: [
-                                  TextResponsive(
-                                    textColor: AppPalette.primaryGreen,
-                                    text: portfolio.name,
-                                    style:
-                                        Theme.of(context).textTheme.titleLarge,
-                                    defVal: 50,
-                                    tabVal: 45,
-                                    mobVal: 30,
-                                    maxLines: 3,
-                                    textAlign: TextAlign.center,
-                                  ),
-                                  Icon(
-                                    Icons.open_in_full_rounded,
-                                    size: iconSize(context).value,
-                                  ),
-                                ],
-                              ),
-                            ),
-                          ),
-                        ),
-                      );
+                      return GridHover(portfolio: portfolio);
                     }
                     return const OpenIconGrid();
                   },

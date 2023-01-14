@@ -1,8 +1,8 @@
 import 'package:core/core.dart';
 import 'package:flutter/material.dart';
-import 'package:home/src/sections/headline.dart';
 
-import 'sections/content.dart';
+import 'sections/sections.dart';
+import 'widgets/widgets.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -16,12 +16,12 @@ class HomeScreen extends StatelessWidget {
           const ColoredBox(color: AppPalette.primaryGreen),
           ListView(
             padding: EdgeInsets.all(defaultPadding(context).value),
-            children: [
-              const Headline(),
-              SizedBox(
-                height: defaultPadding(context).value,
-              ),
-              const Content(),
+            children: const [
+              Headline(),
+              TitleSection(title: 'Portfolio'),
+              Content(),
+              TitleSection(title: 'Certificate'),
+              Certificate(),
             ],
           ),
         ],

@@ -144,3 +144,35 @@ ResponsiveValue<dynamic> borderRadius(
     ],
   );
 }
+
+ResponsiveValue<dynamic> titleSection(
+  BuildContext context, [
+  double defaultValue = 100,
+  double valueTablet = 80,
+  double valueMobile = 70,
+]) {
+  return ResponsiveValue(
+    context,
+    defaultValue: defaultValue,
+    valueWhen: [
+      Condition.smallerThan(name: DESKTOP, value: valueTablet),
+      Condition.smallerThan(name: TABLET, value: valueMobile),
+    ],
+  );
+}
+
+ResponsiveValue<dynamic> certificateSectionHeight(
+  BuildContext context, [
+  double defaultValue = 630,
+  double valueTablet = 630,
+  double valueMobile = 400,
+]) {
+  return ResponsiveValue(
+    context,
+    defaultValue: defaultValue,
+    valueWhen: [
+      Condition.smallerThan(name: DESKTOP, value: valueTablet),
+      Condition.smallerThan(name: TABLET, value: valueMobile),
+    ],
+  );
+}

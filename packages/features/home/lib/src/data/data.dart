@@ -1,3 +1,4 @@
+import 'certificate_path_model.dart';
 import 'portfolio_path_model.dart';
 
 List<PortfolioPath> dataPortfolio = [
@@ -154,5 +155,87 @@ List<PortfolioPath> dataPortfolio = [
     linkGithub: 'https://github.com/joshuapurbaa/telkomsel-app-clone',
     linkApk:
         'https://drive.google.com/file/d/1JeylQCsM9cycDAKnxG-0hrzZ_KiAYlar/view?usp=share_link',
+  ),
+];
+
+List<CertificatePath> certificateData = [
+  CertificatePath(
+    name: 'Memulai Pemrograman Dengan Dart',
+    path: [
+      'assets/certificate_img/dart.jpg',
+    ],
+    link: 'https://www.dicoding.com/certificates/QLZ9854VDX5D',
+  ),
+  CertificatePath(
+    name: 'Belajar Membuat Aplikasi Flutter untuk Pemula',
+    path: [
+      'assets/certificate_img/fpemula1.jpg',
+      'assets/certificate_img/fpemula2.jpg',
+    ],
+    link: 'https://www.dicoding.com/certificates/98XW6MM2LXM3',
+  ),
+  CertificatePath(
+    name: 'Belajar Fundamental Aplikasi Flutter',
+    path: [
+      'assets/certificate_img/ffundamental1.jpg',
+      'assets/certificate_img/ffundamental2.jpg',
+    ],
+    link: 'https://www.dicoding.com/certificates/NVP714DD4PR0',
+  ),
+  CertificatePath(
+    name: 'Menjadi Flutter Developer Expert',
+    path: [
+      'assets/certificate_img/fexpert1.jpg',
+      'assets/certificate_img/fexpert2.jpg',
+      'assets/certificate_img/fexpert3.jpg',
+    ],
+    link: 'https://www.dicoding.com/certificates/MEPJLMG4WZ3V',
+  ),
+  CertificatePath(
+    name: 'Meniti Karier sebagai Software Developer',
+    path: [
+      'assets/certificate_img/sd.jpg',
+    ],
+    link: 'https://www.dicoding.com/certificates/KEXL4DQGWXG2',
+  ),
+  CertificatePath(
+    name: 'Memulai Dasar Pemrograman untuk Menjadi Pengembang Software',
+    path: [
+      'assets/certificate_img/ps.jpg',
+    ],
+    link: 'https://www.dicoding.com/certificates/L4PQMKW12ZO1',
+  ),
+  CertificatePath(
+    name: 'Pengenalan ke Logika Pemrograman (Programming Logic 101)',
+    path: [
+      'assets/certificate_img/101.jpg',
+    ],
+    link: 'https://www.dicoding.com/certificates/L4PQMKW12ZO1',
+  ),
+  CertificatePath(
+    name: 'Belajar Dasar Pemrograman JavaScript',
+    path: [
+      'assets/certificate_img/javascript/1.jpg',
+      'assets/certificate_img/javascript/2.jpg',
+      'assets/certificate_img/javascript/3.jpg',
+    ],
+    link: 'https://www.dicoding.com/certificates/1RXYM66KMXVM',
+  ),
+  CertificatePath(
+    name: 'Belajar Membuat Aplikasi Back-End untuk Pemula',
+    path: [
+      'assets/certificate_img/backend/1.jpg',
+      'assets/certificate_img/backend/2.jpg',
+    ],
+    link: 'https://www.dicoding.com/certificates/L4PQ4Y5GQXO1',
+  ),
+  CertificatePath(
+    name: 'Cloud Practitioner Essentials (Belajar Dasar AWS Cloud)',
+    path: [
+      'assets/certificate_img/aws/1.jpg',
+      'assets/certificate_img/aws/2.jpg',
+      'assets/certificate_img/aws/3.jpg',
+    ],
+    link: 'https://www.dicoding.com/certificates/0LZ01MGNKP65',
   ),
 ];

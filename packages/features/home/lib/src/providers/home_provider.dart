@@ -1,4 +1,5 @@
 import 'package:flutter/cupertino.dart';
+import 'package:home/src/data/certificate_path_model.dart';
 import 'package:home/src/data/data.dart';
 
 import '../data/portfolio_path_model.dart';
@@ -10,11 +11,22 @@ class HomeProvider extends ChangeNotifier {
   final List<PortfolioPath> _portfolioPathList = [];
   List<PortfolioPath> get portfolioPathList => _portfolioPathList;
 
+  final List<CertificatePath> _certificatePathList = [];
+  List<CertificatePath> get certificatePathList => _certificatePathList;
+
   int _activeIndex = 0;
   int get activeIndex => _activeIndex;
 
   final PageController _controller = PageController();
   PageController get controller => _controller;
+
+  int _helperIndex = 0;
+  int get helperIndex => _helperIndex;
+
+  void getIndex(int index) {
+    _helperIndex = index;
+    notifyListeners();
+  }
 
   void onTapped() {
     _isVisible = !_isVisible;
@@ -24,6 +36,10 @@ class HomeProvider extends ChangeNotifier {
   void fetchData() {
     for (var data in dataPortfolio) {
       _portfolioPathList.add(data);
+    }
+
+    for (var data in certificateData) {
+      _certificatePathList.add(data);
     }
     notifyListeners();
   }

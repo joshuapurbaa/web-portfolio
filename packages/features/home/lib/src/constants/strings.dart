@@ -4,6 +4,9 @@ class Strings {
   static String headline =
       'Hi, I\'m Joshua, a Flutter Developer with more than 1 years experience';
 
+  static String titleSectionPortfolio = 'Portfolio';
+  static String titleSectionCertificate = 'Certificate';
+
   // Link
   static String cv =
       'https://drive.google.com/file/d/1keUw_UeGhZH6wjOsn0w0XevrDJlltnTm/view?usp=share_link';
