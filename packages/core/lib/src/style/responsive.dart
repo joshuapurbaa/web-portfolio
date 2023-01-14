@@ -116,8 +116,8 @@ ResponsiveValue<dynamic> littleSpace(
 ResponsiveValue<dynamic> gridIconOpen(
   BuildContext context, [
   double defaultValue = 50,
-  double valueTablet = 40,
-  double valueMobile = 30,
+  double valueTablet = 45,
+  double valueMobile = 45,
 ]) {
   return ResponsiveValue(
     context,

@@ -1,35 +1,29 @@
 import 'package:flutter/material.dart';
 
-class GlassMorphism extends StatelessWidget {
+class HoverEffect extends StatelessWidget {
   final Widget child;
   final double startGradient;
   final double endGradient;
   final AlignmentGeometry begin;
   final AlignmentGeometry end;
 
-  final double heightGlass;
+  // final double heightGlass;
 
-  const GlassMorphism({
+  const HoverEffect({
     Key? key,
     required this.child,
     required this.startGradient,
     required this.endGradient,
     this.begin = Alignment.centerLeft,
     this.end = Alignment.centerRight,
-    required this.heightGlass,
+    // required this.heightGlass,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: heightGlass,
       alignment: Alignment.center,
       decoration: BoxDecoration(
-        // image: const DecorationImage(
-        //   image: AssetImage('assets/noiseBg.png', package: 'home'),
-        //   fit: BoxFit.cover,
-        //   opacity: 0.05,
-        // ),
         gradient: LinearGradient(
           colors: [
             Colors.white.withOpacity(startGradient),

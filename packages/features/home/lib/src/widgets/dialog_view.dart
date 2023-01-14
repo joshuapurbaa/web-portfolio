@@ -26,6 +26,7 @@ class _DialogViewState extends State<DialogView> {
   final PageController _controller = PageController();
   @override
   Widget build(BuildContext context) {
+    final isDesktop = ResponsiveWrapper.of(context).isLargerThan(MOBILE);
     return LayoutBuilder(
       builder: (context, constraints) {
         final maxWidth = constraints.maxWidth;
@@ -45,6 +46,13 @@ class _DialogViewState extends State<DialogView> {
             right: defaultPadding(context).value,
             bottom: defaultPadding(context).value,
           ),
+          title: !isDesktop
+              ? Text(
+                  widget.portfolio.name,
+                  style: textTheme.headlineSmall,
+                  textAlign: TextAlign.center,
+                )
+              : null,
           actions: [
             IconButton(
               onPressed: () {

@@ -40,7 +40,7 @@ class CallToAction extends StatelessWidget {
           width: defaultPadding(context, 15, 12, 10).value,
         ),
         TextButtonIcon(
-          url: Strings.wa,
+          url: Strings.cv,
           icon: 'assets/download1.png',
           label: 'Download CV',
         ),

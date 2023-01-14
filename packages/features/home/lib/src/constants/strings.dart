@@ -5,6 +5,8 @@ class Strings {
       'Hi, I\'m Joshua, a Flutter Developer with more than 1 years experience';
 
   // Link
+  static String cv =
+      'https://drive.google.com/file/d/1keUw_UeGhZH6wjOsn0w0XevrDJlltnTm/view?usp=share_link';
   static String playStoreAlterra =
       'https://play.google.com/store/apps/details?id=com.alterra.academy.alterra_chat';
   static String wa = 'https://wa.me/6282281221123';
