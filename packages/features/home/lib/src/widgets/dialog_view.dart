@@ -233,15 +233,16 @@ class _DialogViewState extends State<DialogView> {
                                 );
                               },
                             ),
-                            RowBotton(
-                              icon: 'assets/download2.png',
-                              text: '.apk',
-                              onPressed: () {
-                                UrlLauncher.execute(
-                                  widget.portfolio.linkApk,
-                                );
-                              },
-                            ),
+                            if (widget.portfolio.linkApk != 'null')
+                              RowBotton(
+                                icon: 'assets/download2.png',
+                                text: '.apk',
+                                onPressed: () {
+                                  UrlLauncher.execute(
+                                    widget.portfolio.linkApk,
+                                  );
+                                },
+                              ),
                             if (portfolioPath.indexOf(widget.portfolio) == 3)
                               RowBotton(
                                 icon: 'assets/google_play.png',

@@ -38,7 +38,7 @@ List<PortfolioPath> portfolioPath = [
       'Api',
     ],
     linkGithub: 'https://github.com/joshuapurbaa/tempat-makan',
-    linkApk: '',
+    linkApk: 'null',
   ),
   PortfolioPath(
     name: 'PLN Mobile\nClone',
