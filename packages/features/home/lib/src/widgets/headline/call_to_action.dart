@@ -1,8 +1,8 @@
 import 'package:core/core.dart';
 import 'package:flutter/material.dart';
 
-import '../constants/constants.dart';
-import 'widgets.dart';
+import '../../constants/constants.dart';
+import '../widgets.dart';
 
 class CallToAction extends StatelessWidget {
   const CallToAction({
