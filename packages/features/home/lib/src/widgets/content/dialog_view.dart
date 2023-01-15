@@ -8,13 +8,26 @@ import 'package:responsive_framework/responsive_framework.dart';
 import '../../data/portfolio_path_model.dart';
 import '../widgets.dart';
 
-class DialogView extends StatelessWidget {
+class DialogView extends StatefulWidget {
   const DialogView({
     Key? key,
     required this.portfolio,
   }) : super(key: key);
 
   final PortfolioPath portfolio;
+
+  @override
+  State<DialogView> createState() => _DialogViewState();
+}
+
+class _DialogViewState extends State<DialogView> {
+  @override
+  void initState() {
+    super.initState();
+    Future.microtask(
+      () => Provider.of<HomeProvider>(context, listen: false).changeValue(0),
+    );
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -41,7 +54,7 @@ class DialogView extends StatelessWidget {
               ),
               title: !notMobile
                   ? Text(
-                      portfolio.name,
+                      widget.portfolio.name,
                       style: textTheme.headlineSmall,
                       textAlign: TextAlign.center,
                     )
@@ -50,6 +63,7 @@ class DialogView extends StatelessWidget {
                 IconButton(
                   onPressed: () {
                     Navigator.pop(context);
+                    provider.changeValue(0);
                   },
                   icon: Icon(
                     Icons.close_rounded,
@@ -87,15 +101,15 @@ class DialogView extends StatelessWidget {
                                   },
                                 ),
                                 child: PageView.builder(
-                                  controller: provider.controller,
-                                  itemCount: portfolio.path.length,
+                                  controller: provider.dialogViewController,
+                                  itemCount: widget.portfolio.path.length,
                                   onPageChanged: (value) {
                                     provider.changeValue(value);
                                   },
                                   itemBuilder: (context, index) {
                                     return Image(
                                       image: AssetImage(
-                                        portfolio.path[index],
+                                        widget.portfolio.path[index],
                                         package: 'home',
                                       ),
                                     );
@@ -103,14 +117,14 @@ class DialogView extends StatelessWidget {
                                 ),
                               ),
                             ),
-                            RightIconDialogView(portfolio: portfolio),
+                            RightIconDialogView(portfolio: widget.portfolio),
                           ],
                         ),
                       ),
                     ),
                     ResponsiveRowColumnItem(
                       child: DialogDescription(
-                        portfolio: portfolio,
+                        portfolio: widget.portfolio,
                       ),
                     ),
                   ],

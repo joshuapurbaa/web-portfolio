@@ -2,7 +2,7 @@ class Strings {
   Strings._();
 
   static String headline =
-      'Hi, I\'m Joshua, a Flutter Developer with more than 1 years experience';
+      'Hello, I\'m Joshua, a Flutter Developer with more than 1 years experience';
 
   static String titleSectionPortfolio = 'Portfolio';
   static String titleSectionCertificate = 'Certificate';

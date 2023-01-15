@@ -26,7 +26,7 @@ class RightIconDialogView extends StatelessWidget {
                 : true,
             child: IconButton(
               onPressed: () {
-                provider.controller.nextPage(
+                provider.dialogViewController.nextPage(
                   duration: const Duration(milliseconds: 300),
                   curve: Sprung.criticallyDamped,
                 );

@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:flutter/cupertino.dart';
 import 'package:home/src/data/certificate_path_model.dart';
 import 'package:home/src/data/data.dart';
@@ -17,8 +19,11 @@ class HomeProvider extends ChangeNotifier {
   int _activeIndex = 0;
   int get activeIndex => _activeIndex;
 
-  final PageController _controller = PageController();
-  PageController get controller => _controller;
+  final PageController _dialogViewController = PageController();
+  PageController get dialogViewController => _dialogViewController;
+
+  final PageController _certificateController = PageController();
+  PageController get certificateController => _certificateController;
 
   int _helperIndex = 0;
   int get helperIndex => _helperIndex;
@@ -46,12 +51,14 @@ class HomeProvider extends ChangeNotifier {
 
   void changeValue(int value) {
     _activeIndex = value;
+    log('$_activeIndex');
     notifyListeners();
   }
 
   @override
   void dispose() {
-    _controller.dispose();
+    _dialogViewController.dispose();
+    _certificateController.dispose();
     super.dispose();
   }
 }

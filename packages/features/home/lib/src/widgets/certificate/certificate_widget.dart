@@ -31,7 +31,7 @@ class CertificateWidget extends StatelessWidget {
                   },
                 ),
                 child: PageView.builder(
-                  controller: provider.controller,
+                  controller: provider.certificateController,
                   itemCount: data.length,
                   onPageChanged: (value) {
                     provider.getIndex(value);
@@ -58,7 +58,7 @@ class CertificateWidget extends StatelessWidget {
                       ? SizedBox(height: defaultPadding(context).value)
                       : const SizedBox(),
                   SmoothPageIndicator(
-                    controller: provider.controller,
+                    controller: provider.certificateController,
                     count: provider.certificatePathList.length,
                     effect: WormEffect(
                       dotColor: AppPalette.primaryGreen.withOpacity(0.5),
