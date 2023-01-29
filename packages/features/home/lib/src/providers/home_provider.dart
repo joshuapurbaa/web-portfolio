@@ -1,5 +1,3 @@
-import 'dart:developer';
-
 import 'package:flutter/cupertino.dart';
 import 'package:home/src/data/certificate_path_model.dart';
 import 'package:home/src/data/data.dart';
@@ -51,7 +49,7 @@ class HomeProvider extends ChangeNotifier {
 
   void changeValue(int value) {
     _activeIndex = value;
-    log('$_activeIndex');
+
     notifyListeners();
   }
 

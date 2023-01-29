@@ -5,8 +5,10 @@ class PortfolioPath {
   List<String> tags;
   final String linkGithub;
   final String linkApk;
+  String? linkOther;
 
   PortfolioPath({
+    this.linkOther,
     required this.linkGithub,
     required this.linkApk,
     required this.name,

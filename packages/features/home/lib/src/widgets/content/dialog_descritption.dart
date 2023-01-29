@@ -86,15 +86,16 @@ class DialogDescription extends StatelessWidget {
             runSpacing: littleSpace(context, 5, 3, 2).value,
             spacing: littleSpace(context, 5, 3, 2).value,
             children: [
-              RowBotton(
-                icon: 'assets/github.png',
-                text: 'Github',
-                onPressed: () {
-                  UrlLauncher.execute(
-                    portfolio.linkGithub,
-                  );
-                },
-              ),
+              if (portfolio.linkGithub != 'null')
+                RowBotton(
+                  icon: 'assets/github.png',
+                  text: 'Github',
+                  onPressed: () {
+                    UrlLauncher.execute(
+                      portfolio.linkGithub,
+                    );
+                  },
+                ),
               if (portfolio.linkApk != 'null')
                 RowBotton(
                   icon: 'assets/download2.png',
@@ -112,6 +113,16 @@ class DialogDescription extends StatelessWidget {
                   onPressed: () {
                     UrlLauncher.execute(
                       Strings.playStoreAlterra,
+                    );
+                  },
+                ),
+              if (portfolio.linkOther != null)
+                RowBotton(
+                  icon: 'assets/link.png',
+                  text: 'Course Link',
+                  onPressed: () {
+                    UrlLauncher.execute(
+                      portfolio.linkOther!,
                     );
                   },
                 ),

@@ -15,6 +15,8 @@ class HomeScreen extends StatelessWidget {
         children: [
           const ColoredBox(color: AppPalette.primaryGreen),
           ListView(
+            primary: true,
+            scrollDirection: Axis.vertical,
             padding: EdgeInsets.all(defaultPadding(context).value),
             children: const [
               Headline(),

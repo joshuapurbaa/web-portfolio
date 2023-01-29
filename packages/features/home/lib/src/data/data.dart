@@ -156,6 +156,21 @@ List<PortfolioPath> dataPortfolio = [
     linkApk:
         'https://drive.google.com/file/d/1JeylQCsM9cycDAKnxG-0hrzZ_KiAYlar/view?usp=share_link',
   ),
+  PortfolioPath(
+      name: 'Udemy Course',
+      path: [
+        "assets/screenshot/udemy/1.png",
+        "assets/screenshot/udemy/2.png",
+      ],
+      description: 'Feature: Learning Materials',
+      tags: [
+        'courses',
+        'tutorial',
+      ],
+      linkGithub: 'null',
+      linkApk: 'null',
+      linkOther:
+          'https://www.udemy.com/course/flutter-redindwhite-academy-by-joshua/?instructorPreviewMode=guest'),
 ];
 
 List<CertificatePath> certificateData = [
