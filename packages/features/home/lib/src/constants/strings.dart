@@ -9,7 +9,7 @@ class Strings {
 
   // Link
   static String cv =
-      'https://drive.google.com/file/d/1keUw_UeGhZH6wjOsn0w0XevrDJlltnTm/view?usp=share_link';
+      'https://drive.google.com/file/d/1TGV1mIwTbadwpH81QZiWmfA3xPVfWI-d/view?usp=sharing';
   static String playStoreAlterra =
       'https://play.google.com/store/apps/details?id=com.alterra.academy.alterra_chat';
   static String wa = 'https://wa.me/6282281221123';
