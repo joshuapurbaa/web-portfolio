@@ -9,12 +9,13 @@ class Headline extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final isDesktop = ResponsiveWrapper.of(context).isLargerThan(MOBILE);
     return SizedBox(
       height: headlineSectionHeight(context).value,
       child: ResponsiveRowColumn(
         columnSpacing: defaultPadding(context).value,
         rowSpacing: defaultPadding(context).value,
-        layout: ResponsiveWrapper.of(context).isLargerThan(MOBILE)
+        layout: isDesktop
             ? ResponsiveRowColumnType.ROW
             : ResponsiveRowColumnType.COLUMN,
         columnVerticalDirection: VerticalDirection.up,

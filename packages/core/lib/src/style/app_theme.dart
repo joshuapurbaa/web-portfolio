@@ -21,11 +21,15 @@ class AppTheme {
       fontWeight: FontWeight.w700,
       color: AppPalette.primaryGreen,
     ),
+
     headlineMedium: GoogleFonts.nunitoSans(
-      fontWeight: FontWeight.w500,
+      fontWeight: FontWeight.w700,
+      color: AppPalette.primaryGreen,
     ),
+    // Dialog View
     headlineSmall: GoogleFonts.nunitoSans(
       fontWeight: FontWeight.w700,
+      color: AppPalette.primaryGreen,
     ),
     titleLarge: GoogleFonts.nunitoSans(
       fontWeight: FontWeight.w700,

@@ -1,8 +1,8 @@
 import 'package:core/core.dart';
 import 'package:flutter/material.dart';
 
-import '../constants/constants.dart';
-import 'widgets.dart';
+import '../../constants/constants.dart';
+import '../widgets.dart';
 
 class CallToAction extends StatelessWidget {
   const CallToAction({
@@ -40,7 +40,7 @@ class CallToAction extends StatelessWidget {
           width: defaultPadding(context, 15, 12, 10).value,
         ),
         TextButtonIcon(
-          url: Strings.wa,
+          url: Strings.cv,
           icon: 'assets/download1.png',
           label: 'Download CV',
         ),

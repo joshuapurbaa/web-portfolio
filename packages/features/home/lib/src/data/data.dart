@@ -1,22 +1,7 @@
-class PortfolioPath {
-  final String name;
-  List<String> path;
-  final String description;
-  List<String> tags;
-  final String linkGithub;
-  final String linkApk;
+import 'certificate_path_model.dart';
+import 'portfolio_path_model.dart';
 
-  PortfolioPath({
-    required this.linkGithub,
-    required this.linkApk,
-    required this.name,
-    required this.path,
-    required this.description,
-    required this.tags,
-  });
-}
-
-List<PortfolioPath> portfolioPath = [
+List<PortfolioPath> dataPortfolio = [
   PortfolioPath(
     name: 'Tempat Makan',
     path: [
@@ -38,7 +23,7 @@ List<PortfolioPath> portfolioPath = [
       'Api',
     ],
     linkGithub: 'https://github.com/joshuapurbaa/tempat-makan',
-    linkApk: '',
+    linkApk: 'null',
   ),
   PortfolioPath(
     name: 'PLN Mobile\nClone',
@@ -170,5 +155,102 @@ List<PortfolioPath> portfolioPath = [
     linkGithub: 'https://github.com/joshuapurbaa/telkomsel-app-clone',
     linkApk:
         'https://drive.google.com/file/d/1JeylQCsM9cycDAKnxG-0hrzZ_KiAYlar/view?usp=share_link',
+  ),
+  PortfolioPath(
+      name: 'Udemy Course',
+      path: [
+        "assets/screenshot/udemy/1.png",
+        "assets/screenshot/udemy/2.png",
+      ],
+      description: 'Feature: Learning Materials',
+      tags: [
+        'courses',
+        'tutorial',
+      ],
+      linkGithub: 'null',
+      linkApk: 'null',
+      linkOther:
+          'https://www.udemy.com/course/flutter-redindwhite-academy-by-joshua/?instructorPreviewMode=guest'),
+];
+
+List<CertificatePath> certificateData = [
+  CertificatePath(
+    name: 'Memulai Pemrograman Dengan Dart',
+    path: [
+      'assets/certificate_img/dart.jpg',
+    ],
+    link: 'https://www.dicoding.com/certificates/QLZ9854VDX5D',
+  ),
+  CertificatePath(
+    name: 'Belajar Membuat Aplikasi Flutter untuk Pemula',
+    path: [
+      'assets/certificate_img/fpemula1.jpg',
+      'assets/certificate_img/fpemula2.jpg',
+    ],
+    link: 'https://www.dicoding.com/certificates/98XW6MM2LXM3',
+  ),
+  CertificatePath(
+    name: 'Belajar Fundamental Aplikasi Flutter',
+    path: [
+      'assets/certificate_img/ffundamental1.jpg',
+      'assets/certificate_img/ffundamental2.jpg',
+    ],
+    link: 'https://www.dicoding.com/certificates/NVP714DD4PR0',
+  ),
+  CertificatePath(
+    name: 'Menjadi Flutter Developer Expert',
+    path: [
+      'assets/certificate_img/fexpert1.jpg',
+      'assets/certificate_img/fexpert2.jpg',
+      'assets/certificate_img/fexpert3.jpg',
+    ],
+    link: 'https://www.dicoding.com/certificates/MEPJLMG4WZ3V',
+  ),
+  CertificatePath(
+    name: 'Meniti Karier sebagai Software Developer',
+    path: [
+      'assets/certificate_img/sd.jpg',
+    ],
+    link: 'https://www.dicoding.com/certificates/KEXL4DQGWXG2',
+  ),
+  CertificatePath(
+    name: 'Memulai Dasar Pemrograman untuk Menjadi Pengembang Software',
+    path: [
+      'assets/certificate_img/ps.jpg',
+    ],
+    link: 'https://www.dicoding.com/certificates/L4PQMKW12ZO1',
+  ),
+  CertificatePath(
+    name: 'Pengenalan ke Logika Pemrograman (Programming Logic 101)',
+    path: [
+      'assets/certificate_img/101.jpg',
+    ],
+    link: 'https://www.dicoding.com/certificates/L4PQMKW12ZO1',
+  ),
+  CertificatePath(
+    name: 'Belajar Dasar Pemrograman JavaScript',
+    path: [
+      'assets/certificate_img/javascript/1.jpg',
+      'assets/certificate_img/javascript/2.jpg',
+      'assets/certificate_img/javascript/3.jpg',
+    ],
+    link: 'https://www.dicoding.com/certificates/1RXYM66KMXVM',
+  ),
+  CertificatePath(
+    name: 'Belajar Membuat Aplikasi Back-End untuk Pemula',
+    path: [
+      'assets/certificate_img/backend/1.jpg',
+      'assets/certificate_img/backend/2.jpg',
+    ],
+    link: 'https://www.dicoding.com/certificates/L4PQ4Y5GQXO1',
+  ),
+  CertificatePath(
+    name: 'Cloud Practitioner Essentials (Belajar Dasar AWS Cloud)',
+    path: [
+      'assets/certificate_img/aws/1.jpg',
+      'assets/certificate_img/aws/2.jpg',
+      'assets/certificate_img/aws/3.jpg',
+    ],
+    link: 'https://www.dicoding.com/certificates/0LZ01MGNKP65',
   ),
 ];

@@ -116,8 +116,8 @@ ResponsiveValue<dynamic> littleSpace(
 ResponsiveValue<dynamic> gridIconOpen(
   BuildContext context, [
   double defaultValue = 50,
-  double valueTablet = 40,
-  double valueMobile = 30,
+  double valueTablet = 45,
+  double valueMobile = 45,
 ]) {
   return ResponsiveValue(
     context,
@@ -134,6 +134,38 @@ ResponsiveValue<dynamic> borderRadius(
   double defaultValue = 12,
   double valueTablet = 10,
   double valueMobile = 8,
+]) {
+  return ResponsiveValue(
+    context,
+    defaultValue: defaultValue,
+    valueWhen: [
+      Condition.smallerThan(name: DESKTOP, value: valueTablet),
+      Condition.smallerThan(name: TABLET, value: valueMobile),
+    ],
+  );
+}
+
+ResponsiveValue<dynamic> titleSection(
+  BuildContext context, [
+  double defaultValue = 100,
+  double valueTablet = 80,
+  double valueMobile = 70,
+]) {
+  return ResponsiveValue(
+    context,
+    defaultValue: defaultValue,
+    valueWhen: [
+      Condition.smallerThan(name: DESKTOP, value: valueTablet),
+      Condition.smallerThan(name: TABLET, value: valueMobile),
+    ],
+  );
+}
+
+ResponsiveValue<dynamic> certificateSectionHeight(
+  BuildContext context, [
+  double defaultValue = 630,
+  double valueTablet = 630,
+  double valueMobile = 450,
 ]) {
   return ResponsiveValue(
     context,
