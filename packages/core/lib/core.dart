@@ -7,3 +7,4 @@ export 'src/style/gaps.dart';
 export 'src/utils/url_launcher.dart';
 export 'src/utils/fading_effect.dart';
 export 'src/style/text_responsive.dart';
+export 'src/utils/image_compress.dart';

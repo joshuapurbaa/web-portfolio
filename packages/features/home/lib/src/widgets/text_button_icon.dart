@@ -21,9 +21,11 @@ class TextButtonIcon extends StatelessWidget {
         padding: const EdgeInsets.all(10),
         elevation: 4,
       ),
-      onPressed: () {
-        UrlLauncher.execute(url);
-      },
+      onPressed: url != 'null'
+          ? () {
+              UrlLauncher.execute(url);
+            }
+          : null,
       icon: Image.asset(
         icon,
         width: 20,

@@ -74,7 +74,7 @@ class _DialogViewState extends State<DialogView> {
               content: SizedBox(
                 // check to determine alert dialog height and width
                 width: mediaQueryW * (notMobile ? 0.75 : 0.90),
-                height: mediaQueryH * (notMobile ? 0.85 : 0.60),
+                height: mediaQueryH * (notMobile ? 0.85 : 0.70),
                 child: ResponsiveRowColumn(
                   rowSpacing: defaultPadding(context).value,
                   layout: notMobile

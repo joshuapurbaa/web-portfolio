@@ -3,6 +3,83 @@ import 'portfolio_path_model.dart';
 
 List<PortfolioPath> dataPortfolio = [
   PortfolioPath(
+    linkGithub: 'null',
+    linkApk: 'null',
+    name: 'COLOK.IN',
+    path: [
+      "assets/screenshot/colok_in/1.png",
+      "assets/screenshot/colok_in/2.png",
+      "assets/screenshot/colok_in/3.png",
+      "assets/screenshot/colok_in/4.png",
+      "assets/screenshot/colok_in/5.png",
+      "assets/screenshot/colok_in/6.png",
+      "assets/screenshot/colok_in/7.png",
+      "assets/screenshot/colok_in/8.png",
+      "assets/screenshot/colok_in/9.png",
+    ],
+    description: 'Aplikasi Tenant SPKLU',
+    features:
+        'Login, Logout, Session Timeout, Edit password, Add Charger Point, Add Card, Location (Google Map)',
+    tags: [
+      'enhance',
+      'refactor code',
+      'BLOC',
+      'fix bugs',
+      'add features',
+      'integrasi API'
+    ],
+  ),
+  PortfolioPath(
+    linkGithub: 'null',
+    linkApk: 'null',
+    name: 'PLN Click',
+    path: [
+      "assets/screenshot/pln_click/1.png",
+      "assets/screenshot/pln_click/2.png",
+      "assets/screenshot/pln_click/3.png",
+      "assets/screenshot/pln_click/4.png",
+      "assets/screenshot/pln_click/5.png",
+      "assets/screenshot/pln_click/6.png",
+      "assets/screenshot/pln_click/7.png",
+      "assets/screenshot/pln_click/8.png",
+      "assets/screenshot/pln_click/9.png",
+      "assets/screenshot/pln_click/10.png",
+    ],
+    description: 'Aplikasi Super App karyawan PLN Seluruh Indonesia',
+    features:
+        'Clock In, Clock Out, Melihat Surat Masuk, Approval, Shift Management, SPPD',
+    tags: [
+      'enhance',
+      'deploy to appstore',
+      'fix bugs',
+      'deploy to playstore',
+      'add features',
+      'integrasi API'
+    ],
+  ),
+  PortfolioPath(
+    linkGithub: 'null',
+    linkApk: 'null',
+    name: 'Barista',
+    path: [
+      "assets/screenshot/barista/1.png",
+      "assets/screenshot/barista/2.png",
+      "assets/screenshot/barista/3.png",
+      "assets/screenshot/barista/4.png",
+      "assets/screenshot/barista/5.png",
+      "assets/screenshot/barista/6.png",
+    ],
+    description: 'Manajemen agenda Direksi PLN',
+    features:
+        'Login with SSO, Share agenda with Whats Up, Melihat detail agenda',
+    tags: [
+      'enhance',
+      'deploy to appstore',
+      'fix bugs',
+      'deploy to playstore',
+    ],
+  ),
+  PortfolioPath(
     name: 'Tempat Makan',
     path: [
       "assets/screenshot/tempat_makan/1.png",
@@ -14,7 +91,8 @@ List<PortfolioPath> dataPortfolio = [
       "assets/screenshot/tempat_makan/7.png",
       "assets/screenshot/tempat_makan/8.png",
     ],
-    description:
+    description: 'Aplikasi daftar restoran',
+    features:
         'Sign In, Onboarding, Home, Search, Profile, Detail Screen, Review tab, dan Add review',
     tags: [
       'from scratch',
@@ -42,8 +120,9 @@ List<PortfolioPath> dataPortfolio = [
       "assets/screenshot/pln/12.png",
       "assets/screenshot/pln/13.png",
     ],
-    description:
-        'Feature: Onboarding, Sign In, Lupa Password, Sign Up, Home, Profile, Detail Screen',
+    description: 'Clonning Aplikasi menggunakan Screenshot',
+    features:
+        'Onboarding, Sign In, Lupa Password, Sign Up, Home, Profile, Detail Screen',
     tags: [
       'from scratch',
       'clone',
@@ -63,7 +142,8 @@ List<PortfolioPath> dataPortfolio = [
       "assets/screenshot/dana/1.png",
       "assets/screenshot/dana/2.png",
     ],
-    description: 'Feature: Home Screen',
+    description: 'Clonning Aplikasi menggunakan Screenshot',
+    features: 'Home Screen',
     tags: [
       'from scratch',
       'cloning app',
@@ -82,7 +162,8 @@ List<PortfolioPath> dataPortfolio = [
       "assets/screenshot/alterra/2.png",
       "assets/screenshot/alterra/3.png",
     ],
-    description: 'Feature: Sign In, Sign Up, Chat Room, and Sign Out screen',
+    description: 'Aplikasi kirim dan menerima pesan real-time',
+    features: 'Sign In, Sign Up, Chat Room, and Sign Out screen',
     tags: [
       'from scratch',
       'firebase',
@@ -100,7 +181,8 @@ List<PortfolioPath> dataPortfolio = [
       "assets/screenshot/ebook/1.png",
       "assets/screenshot/ebook/2.png",
     ],
-    description: 'Feature: Home and Detail Screen',
+    description: 'Slicing dari design Figma',
+    features: 'Home and Detail Screen',
     tags: [
       'from scratch',
       'animations',
@@ -116,7 +198,8 @@ List<PortfolioPath> dataPortfolio = [
       "assets/screenshot/food_app/1.png",
       "assets/screenshot/food_app/2.png"
     ],
-    description: 'Feature: Home and Detail Screen',
+    description: 'Slicing dari design Figma',
+    features: 'Home and Detail Screen',
     tags: [
       'from scratch',
       'intermediate layout',
@@ -133,7 +216,8 @@ List<PortfolioPath> dataPortfolio = [
       "assets/screenshot/saving/2.png",
       "assets/screenshot/saving/3.png"
     ],
-    description: 'Feature: Onboarding, Home and Portfolio Screen',
+    description: 'Slicing dari design Figma',
+    features: 'Onboarding, Home and Portfolio Screen',
     tags: [
       'from scratch',
       'advance layout',
@@ -147,7 +231,8 @@ List<PortfolioPath> dataPortfolio = [
     path: [
       "assets/screenshot/telkomsel/1.png",
     ],
-    description: 'Feature: Home Screen',
+    description: 'Clonning Aplikasi menggunakan Screenshot',
+    features: 'Home Screen',
     tags: [
       'from scratch',
       'advance layout',
@@ -162,7 +247,9 @@ List<PortfolioPath> dataPortfolio = [
         "assets/screenshot/udemy/1.png",
         "assets/screenshot/udemy/2.png",
       ],
-      description: 'Feature: Learning Materials',
+      description:
+          'Membuat video tutorial tentang development aplikasi menggunakan Flutter',
+      features: 'Screen video capture, audio explanation',
       tags: [
         'courses',
         'tutorial',
@@ -205,6 +292,13 @@ List<CertificatePath> certificateData = [
       'assets/certificate_img/fexpert3.jpg',
     ],
     link: 'https://www.dicoding.com/certificates/MEPJLMG4WZ3V',
+  ),
+  CertificatePath(
+    name: 'Mentor Of MSIB Batch 4',
+    path: [
+      'assets/certificate_img/mentor.jpeg',
+    ],
+    link: 'null',
   ),
   CertificatePath(
     name: 'Meniti Karier sebagai Software Developer',

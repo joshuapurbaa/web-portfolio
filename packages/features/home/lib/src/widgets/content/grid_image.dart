@@ -15,12 +15,15 @@ class GridImage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: EdgeInsets.all(defaultPadding(context).value),
-      child: Image(
-        image: AssetImage(
-          portfolio.path[0],
-          package: 'home',
+      child: ClipRRect(
+        borderRadius: BorderRadius.circular(15),
+        child: Image(
+          image: AssetImage(
+            portfolio.path[0],
+            package: 'home',
+          ),
+          fit: BoxFit.fitHeight,
         ),
-        fit: BoxFit.fitHeight,
       ),
     );
   }

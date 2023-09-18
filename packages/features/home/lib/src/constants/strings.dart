@@ -2,7 +2,7 @@ class Strings {
   Strings._();
 
   static String headline =
-      'Hello, I\'m Joshua, a Flutter Developer with more than 1 years experience';
+      'Hello, I\'m Joshua, a Flutter Developer with more than 2 years experience';
 
   static String titleSectionPortfolio = 'Portfolio';
   static String titleSectionCertificate = 'Certificate';
@@ -12,6 +12,9 @@ class Strings {
       'https://drive.google.com/file/d/1TGV1mIwTbadwpH81QZiWmfA3xPVfWI-d/view?usp=sharing';
   static String playStoreAlterra =
       'https://play.google.com/store/apps/details?id=com.alterra.academy.alterra_chat';
+
+  static String playStorePlnClick =
+      'https://play.google.com/store/apps/details?id=com.icon.plnclick';
   static String wa = 'https://wa.me/6282281221123';
   static String github = 'https://github.com/joshuapurbaa';
   static String linkedIn =

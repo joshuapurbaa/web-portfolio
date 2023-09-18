@@ -23,8 +23,8 @@ class DialogDescription extends StatelessWidget {
         children: [
           TextResponsive(
             textColor: AppPalette.primaryGreen,
-            text: 'Features:',
-            style: textTheme.bodyLarge,
+            text: 'Description:',
+            style: textTheme.bodyLarge!.copyWith(fontWeight: FontWeight.bold),
             defVal: 30,
             tabVal: 25,
             mobVal: 17,
@@ -46,8 +46,31 @@ class DialogDescription extends StatelessWidget {
           ),
           TextResponsive(
             textColor: AppPalette.primaryGreen,
+            text: 'Features:',
+            style: textTheme.bodyLarge!.copyWith(fontWeight: FontWeight.bold),
+            defVal: 30,
+            tabVal: 25,
+            mobVal: 17,
+            maxLines: 5,
+            textAlign: TextAlign.left,
+          ),
+          TextResponsive(
+            textColor: AppPalette.primaryGreen,
+            text: portfolio.features,
+            style: textTheme.bodyLarge,
+            defVal: 30,
+            tabVal: 25,
+            mobVal: 17,
+            maxLines: 5,
+            textAlign: TextAlign.left,
+          ),
+          SizedBox(
+            height: defaultPadding(context).value,
+          ),
+          TextResponsive(
+            textColor: AppPalette.primaryGreen,
             text: 'Tags:',
-            style: Theme.of(context).textTheme.bodyLarge,
+            style: textTheme.bodyLarge!.copyWith(fontWeight: FontWeight.bold),
             defVal: 30,
             tabVal: 25,
             mobVal: 17,
@@ -113,6 +136,16 @@ class DialogDescription extends StatelessWidget {
                   onPressed: () {
                     UrlLauncher.execute(
                       Strings.playStoreAlterra,
+                    );
+                  },
+                ),
+              if (portfolio.name == 'PLN Click')
+                RowBotton(
+                  icon: 'assets/google_play.png',
+                  text: 'Play Store',
+                  onPressed: () {
+                    UrlLauncher.execute(
+                      Strings.playStorePlnClick,
                     );
                   },
                 ),
