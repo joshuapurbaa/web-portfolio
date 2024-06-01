@@ -106,11 +106,13 @@ class _DialogViewState extends State<DialogView> {
                                     provider.changeValue(value);
                                   },
                                   itemBuilder: (context, index) {
-                                    return Image(
-                                      image: AssetImage(
-                                        widget.portfolio.path[index],
-                                        package: 'home',
-                                      ),
+                                    final onUdemy = widget.portfolio.path[index]
+                                        .contains('udemy');
+                                    return Image.asset(
+                                      widget.portfolio.path[index],
+                                      package: 'home',
+                                      cacheWidth: onUdemy ? 820 : 388,
+                                      cacheHeight: onUdemy ? 461 : 820,
                                     );
                                   },
                                 ),

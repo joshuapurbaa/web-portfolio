@@ -17,6 +17,9 @@ class CertificateWidget extends StatelessWidget {
     final padding = defaultPadding(context).value;
     return Consumer<HomeProvider>(
       builder: (context, provider, child) {
+        if (provider.certificatePathList.isEmpty) {
+          return const SizedBox();
+        }
         final data = provider.certificatePathList;
         return Column(
           children: [
@@ -41,11 +44,9 @@ class CertificateWidget extends StatelessWidget {
                   itemBuilder: (context, index) {
                     final certificate = data[index];
 
-                    return Image(
-                      image: AssetImage(
-                        certificate.path[0],
-                        package: 'home',
-                      ),
+                    return Image.asset(
+                      certificate.path[0],
+                      package: 'home',
                       fit: BoxFit.contain,
                     );
                   },
