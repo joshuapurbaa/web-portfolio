@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_framework/responsive_framework.dart';
 
-ResponsiveValue<dynamic> headlineSectionHeight(
+ResponsiveValue<double> headlineSectionHeight(
   BuildContext context, [
   double defaultValue = 400,
   double valueTablet = 400,
@@ -17,7 +17,7 @@ ResponsiveValue<dynamic> headlineSectionHeight(
   );
 }
 
-ResponsiveValue<dynamic> cardHeadline(
+ResponsiveValue<double> cardHeadline(
   BuildContext context, [
   double defaultValue = 400,
   double valueTablet = 400,
@@ -33,7 +33,7 @@ ResponsiveValue<dynamic> cardHeadline(
   );
 }
 
-ResponsiveValue<dynamic> defaultPadding(
+ResponsiveValue<double> defaultPadding(
   BuildContext context, [
   double defaultValue = 20,
   double valueTablet = 18,
@@ -49,11 +49,11 @@ ResponsiveValue<dynamic> defaultPadding(
   );
 }
 
-ResponsiveValue<dynamic> expanded(
+ResponsiveValue<int> expanded(
   BuildContext context, [
-  double defaultValue = 1,
-  double valueTablet = 1,
-  double valueMobile = 1,
+  int defaultValue = 1,
+  int valueTablet = 1,
+  int valueMobile = 1,
 ]) {
   return ResponsiveValue(
     context,
@@ -65,11 +65,11 @@ ResponsiveValue<dynamic> expanded(
   );
 }
 
-ResponsiveValue<dynamic> gridCount(
+ResponsiveValue<int> gridCount(
   BuildContext context, [
-  double defaultValue = 3,
-  double valueTablet = 2,
-  double valueMobile = 1,
+  int defaultValue = 3,
+  int valueTablet = 2,
+  int valueMobile = 1,
 ]) {
   return ResponsiveValue(
     context,
@@ -81,7 +81,7 @@ ResponsiveValue<dynamic> gridCount(
   );
 }
 
-ResponsiveValue<dynamic> iconSize(
+ResponsiveValue<double> iconSize(
   BuildContext context, [
   double defaultValue = 40,
   double valueTablet = 30,
@@ -97,7 +97,7 @@ ResponsiveValue<dynamic> iconSize(
   );
 }
 
-ResponsiveValue<dynamic> littleSpace(
+ResponsiveValue<double> littleSpace(
   BuildContext context, [
   double defaultValue = 5,
   double valueTablet = 3,
@@ -113,7 +113,7 @@ ResponsiveValue<dynamic> littleSpace(
   );
 }
 
-ResponsiveValue<dynamic> gridIconOpen(
+ResponsiveValue<double> gridIconOpen(
   BuildContext context, [
   double defaultValue = 50,
   double valueTablet = 45,
@@ -129,7 +129,7 @@ ResponsiveValue<dynamic> gridIconOpen(
   );
 }
 
-ResponsiveValue<dynamic> borderRadius(
+ResponsiveValue<double> borderRadius(
   BuildContext context, [
   double defaultValue = 12,
   double valueTablet = 10,
@@ -145,7 +145,7 @@ ResponsiveValue<dynamic> borderRadius(
   );
 }
 
-ResponsiveValue<dynamic> titleSection(
+ResponsiveValue<double> titleSection(
   BuildContext context, [
   double defaultValue = 100,
   double valueTablet = 80,
@@ -161,7 +161,7 @@ ResponsiveValue<dynamic> titleSection(
   );
 }
 
-ResponsiveValue<dynamic> certificateSectionHeight(
+ResponsiveValue<double> certificateSectionHeight(
   BuildContext context, [
   double defaultValue = 630,
   double valueTablet = 630,

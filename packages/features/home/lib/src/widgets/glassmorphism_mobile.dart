@@ -1,6 +1,12 @@
 import 'package:flutter/material.dart';
 
 class GlassMorphismMobile extends StatelessWidget {
+
+  const GlassMorphismMobile({
+    required this.child, required this.startGradient, required this.endGradient, required this.heightGlass, super.key,
+    this.begin = Alignment.centerLeft,
+    this.end = Alignment.centerRight,
+  });
   final Widget child;
   final double startGradient;
   final double endGradient;
@@ -8,16 +14,6 @@ class GlassMorphismMobile extends StatelessWidget {
   final AlignmentGeometry end;
 
   final double heightGlass;
-
-  const GlassMorphismMobile({
-    Key? key,
-    required this.child,
-    required this.startGradient,
-    required this.endGradient,
-    this.begin = Alignment.centerLeft,
-    this.end = Alignment.centerRight,
-    required this.heightGlass,
-  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

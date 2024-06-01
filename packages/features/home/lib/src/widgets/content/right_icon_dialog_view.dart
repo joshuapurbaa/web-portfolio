@@ -1,16 +1,14 @@
 import 'package:core/core.dart';
 import 'package:flutter/material.dart';
+import 'package:home/src/data/portfolio_path_model.dart';
+import 'package:home/src/providers/home_provider.dart';
 import 'package:provider/provider.dart';
 import 'package:sprung/sprung.dart';
 
-import '../../data/portfolio_path_model.dart';
-import '../../providers/home_provider.dart';
-
 class RightIconDialogView extends StatelessWidget {
   const RightIconDialogView({
-    Key? key,
-    required this.portfolio,
-  }) : super(key: key);
+    required this.portfolio, super.key,
+  });
 
   final PortfolioPath portfolio;
 

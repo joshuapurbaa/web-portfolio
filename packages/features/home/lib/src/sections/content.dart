@@ -1,15 +1,14 @@
 import 'package:core/core.dart';
 import 'package:flutter/material.dart';
 import 'package:home/src/providers/home_provider.dart';
+import 'package:home/src/widgets/widgets.dart';
 import 'package:provider/provider.dart';
 import 'package:responsive_framework/responsive_wrapper.dart';
 
-import '../widgets/widgets.dart';
-
 class Content extends StatefulWidget {
   const Content({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   State<Content> createState() => _ContentState();
@@ -27,6 +26,9 @@ class _ContentState extends State<Content> {
   @override
   Widget build(BuildContext context) {
     final notMobile = ResponsiveWrapper.of(context).isLargerThan(MOBILE);
+    final axisCount = gridCount(context).value;
+    final axisSpacing = defaultPadding(context).value;
+    final heightGlass = cardHeadline(context).value;
     return Consumer<HomeProvider>(
       builder: (context, provider, child) {
         final data = provider.portfolioPathList;
@@ -35,9 +37,9 @@ class _ContentState extends State<Content> {
           primary: false,
           physics: const NeverScrollableScrollPhysics(),
           gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-            crossAxisCount: gridCount(context).value,
-            mainAxisSpacing: defaultPadding(context).value,
-            crossAxisSpacing: defaultPadding(context).value,
+            crossAxisCount: axisCount ?? 3,
+            mainAxisSpacing: axisSpacing ?? 15,
+            crossAxisSpacing: axisSpacing ?? 15,
           ),
           itemCount: data.length,
           itemBuilder: (context, index) {
@@ -47,26 +49,24 @@ class _ContentState extends State<Content> {
                 Positioned.fill(
                   child: notMobile
                       ? GlassMorphism(
-                          heightGlass: cardHeadline(context).value,
+                          heightGlass: heightGlass ?? 400,
                           startGradient: 0.9,
                           endGradient: 0.1,
-                          begin: Alignment.centerLeft,
-                          end: Alignment.centerRight,
                           child: GridImage(portfolio: portfolio),
                         )
                       : GlassMorphismMobile(
-                          heightGlass: cardHeadline(context).value,
+                          heightGlass: heightGlass ?? 250,
                           startGradient: 0.9,
                           endGradient: 0.1,
-                          begin: Alignment.centerLeft,
-                          end: Alignment.centerRight,
                           child: GridImage(portfolio: portfolio),
                         ),
                 ),
                 OnhoverWidget(
                   builder: (isHovered) {
                     if (isHovered) {
-                      return GridHover(portfolio: portfolio);
+                      return GridHover(
+                        portfolio: portfolio,
+                      );
                     }
                     return const OpenIconGrid();
                   },
@@ -75,7 +75,7 @@ class _ContentState extends State<Content> {
                   Positioned.fill(
                     child: InkWell(
                       onTap: () {
-                        showDialog(
+                        showDialog<void>(
                           context: context,
                           builder: (context) => DialogView(
                             portfolio: portfolio,

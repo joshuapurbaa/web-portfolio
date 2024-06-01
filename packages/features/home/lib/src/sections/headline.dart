@@ -1,8 +1,7 @@
 import 'package:core/core.dart';
 import 'package:flutter/material.dart';
+import 'package:home/src/widgets/widgets.dart';
 import 'package:responsive_framework/responsive_framework.dart';
-
-import '../widgets/widgets.dart';
 
 class Headline extends StatelessWidget {
   const Headline({super.key});

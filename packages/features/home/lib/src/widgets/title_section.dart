@@ -1,22 +1,25 @@
 import 'package:core/core.dart';
 import 'package:flutter/material.dart';
+import 'package:home/src/widgets/widgets.dart';
 import 'package:responsive_framework/responsive_framework.dart';
 
-import 'widgets.dart';
-
 class TitleSection extends StatelessWidget {
-  const TitleSection({super.key, required this.title});
+  const TitleSection({required this.title, super.key});
 
   final String title;
 
   @override
   Widget build(BuildContext context) {
     final notMobile = ResponsiveWrapper.of(context).isLargerThan(MOBILE);
+    final padding = defaultPadding(context).value;
+    final height = titleSection(context).value;
     return Padding(
-      padding: EdgeInsets.symmetric(vertical: defaultPadding(context).value),
+      padding: EdgeInsets.symmetric(
+        vertical: padding ?? 15,
+      ),
       child: notMobile
           ? GlassMorphism(
-              heightGlass: titleSection(context).value,
+              heightGlass: height ?? 100,
               startGradient: 0.9,
               endGradient: 0.5,
               begin: Alignment.topCenter,
@@ -33,11 +36,9 @@ class TitleSection extends StatelessWidget {
               ),
             )
           : GlassMorphismMobile(
-              heightGlass: titleSection(context).value,
+              heightGlass: height ?? 70,
               startGradient: 0.9,
               endGradient: 0.1,
-              begin: Alignment.centerLeft,
-              end: Alignment.centerRight,
               child: TextResponsive(
                 textColor: AppPalette.primaryGreen,
                 text: title,

@@ -3,16 +3,11 @@ import 'package:responsive_framework/responsive_framework.dart';
 
 class TextResponsive extends StatelessWidget {
   const TextResponsive({
-    Key? key,
-    required this.text,
-    required this.style,
-    required this.defVal,
+    required this.text, required this.style, required this.defVal, required this.textAlign, required this.textColor, super.key,
     this.tabVal,
     this.mobVal,
     this.maxLines,
-    required this.textAlign,
-    required this.textColor,
-  }) : super(key: key);
+  });
 
   final String text;
   final TextStyle? style;

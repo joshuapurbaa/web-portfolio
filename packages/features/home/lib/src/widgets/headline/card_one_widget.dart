@@ -1,21 +1,21 @@
 import 'package:core/core.dart';
 import 'package:flutter/material.dart';
 
-import '../../constants/constants.dart';
-import '../widgets.dart';
+import 'package:home/src/constants/constants.dart';
+import 'package:home/src/widgets/widgets.dart';
 
 class CardOneWidget extends StatelessWidget {
   const CardOneWidget({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {
+    final padding = defaultPadding(context).value;
     return Padding(
-      padding: EdgeInsets.all(defaultPadding(context).value),
+      padding: EdgeInsets.all(padding ?? 15),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
-        crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           TextResponsive(
             textColor: AppPalette.primaryGreen,
@@ -27,7 +27,7 @@ class CardOneWidget extends StatelessWidget {
             maxLines: 3,
             textAlign: TextAlign.left,
           ),
-          Gaps(vertical: defaultPadding(context).value),
+          Gaps(vertical: padding ?? 15),
           const CallToAction(),
         ],
       ),

@@ -4,8 +4,8 @@ class UrlLauncher {
   UrlLauncher._();
 
   static Future<void> execute(String uri) async {
-    final Uri url = Uri.parse(uri);
-    if (!await launchUrl(url, mode: LaunchMode.platformDefault)) {
+    final url = Uri.parse(uri);
+    if (!await launchUrl(url)) {
       throw 'Could not launch $url';
     }
   }

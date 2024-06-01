@@ -1,19 +1,19 @@
 import 'package:core/core.dart';
 import 'package:flutter/material.dart';
 
-import '../../constants/constants.dart';
-import '../widgets.dart';
+import 'package:home/src/constants/constants.dart';
+import 'package:home/src/widgets/widgets.dart';
 
 class CallToAction extends StatelessWidget {
   const CallToAction({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {
+    final spacing = defaultPadding(context, 15, 12, 10).value;
     return Wrap(
-      runSpacing: defaultPadding(context, 15, 12, 10).value,
-      runAlignment: WrapAlignment.start,
+      runSpacing: spacing ?? 15,
       children: [
         TextButtonIcon(
           url: Strings.linkedIn,

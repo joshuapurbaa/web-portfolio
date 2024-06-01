@@ -3,12 +3,9 @@ import 'package:flutter/material.dart';
 
 class RowBotton extends StatelessWidget {
   const RowBotton({
-    Key? key,
-    required this.icon,
-    required this.text,
-    required this.onPressed,
+    required this.icon, required this.text, required this.onPressed, super.key,
     this.color = AppPalette.sageGreen,
-  }) : super(key: key);
+  });
 
   final String icon;
   final String text;
@@ -18,19 +15,17 @@ class RowBotton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final textStyle = Theme.of(context).textTheme;
+    final radius = borderRadius(context, 10, 8, 7).value;
+    final space = littleSpace(context, 8, 7, 6).value;
     return MaterialButton(
       onPressed: onPressed,
       shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(
-          borderRadius(context, 10, 8, 7).value,
-        ),
+        borderRadius: BorderRadius.circular(radius ?? 10),
       ),
       color: AppPalette.primaryGreen,
       elevation: 5,
       child: Padding(
-        padding: EdgeInsets.all(
-          littleSpace(context, 8, 7, 6).value,
-        ),
+        padding: EdgeInsets.all(space ?? 7),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           mainAxisSize: MainAxisSize.min,

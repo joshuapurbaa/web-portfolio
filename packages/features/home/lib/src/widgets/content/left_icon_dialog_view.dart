@@ -1,14 +1,13 @@
 import 'package:core/core.dart';
 import 'package:flutter/material.dart';
+import 'package:home/src/providers/home_provider.dart';
 import 'package:provider/provider.dart';
 import 'package:sprung/sprung.dart';
 
-import '../../providers/home_provider.dart';
-
 class LeftIconDialogView extends StatelessWidget {
   const LeftIconDialogView({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {

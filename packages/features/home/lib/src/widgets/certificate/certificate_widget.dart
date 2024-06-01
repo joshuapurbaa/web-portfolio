@@ -2,11 +2,10 @@ import 'package:core/core.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:home/home.dart';
+import 'package:home/src/widgets/widgets.dart';
 import 'package:provider/provider.dart';
 import 'package:responsive_framework/responsive_framework.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
-
-import '../widgets.dart';
 
 class CertificateWidget extends StatelessWidget {
   const CertificateWidget({super.key});
@@ -14,14 +13,17 @@ class CertificateWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final notMobile = ResponsiveWrapper.of(context).isLargerThan(MOBILE);
+    final height = certificateSectionHeight(context).value;
+    final padding = defaultPadding(context).value;
     return Consumer<HomeProvider>(
       builder: (context, provider, child) {
         final data = provider.certificatePathList;
         return Column(
           children: [
-            notMobile
-                ? SizedBox(height: defaultPadding(context).value)
-                : const SizedBox(),
+            if (notMobile)
+              SizedBox(height: defaultPadding(context).value)
+            else
+              const SizedBox(),
             Expanded(
               child: ScrollConfiguration(
                 behavior: ScrollConfiguration.of(context).copyWith(
@@ -51,12 +53,13 @@ class CertificateWidget extends StatelessWidget {
               ),
             ),
             SizedBox(
-              height: certificateSectionHeight(context).value * 0.30,
+              height: (height ?? 630) * 0.30,
               child: Column(
                 children: [
-                  notMobile
-                      ? SizedBox(height: defaultPadding(context).value)
-                      : const SizedBox(),
+                  if (notMobile)
+                    SizedBox(height: defaultPadding(context).value)
+                  else
+                    const SizedBox(),
                   SmoothPageIndicator(
                     controller: provider.certificateController,
                     count: provider.certificatePathList.length,
@@ -66,7 +69,7 @@ class CertificateWidget extends StatelessWidget {
                     ),
                   ),
                   Padding(
-                    padding: EdgeInsets.all(defaultPadding(context).value),
+                    padding: EdgeInsets.all(padding ?? 15),
                     child: TextButtonIcon(
                       url: data[provider.helperIndex].link,
                       icon: 'assets/certificate.png',

@@ -1,21 +1,22 @@
 import 'package:core/core.dart';
 import 'package:flutter/material.dart';
 
-import '../../constants/constants.dart';
-import '../../data/portfolio_path_model.dart';
-import '../widgets.dart';
+import 'package:home/src/constants/constants.dart';
+import 'package:home/src/data/portfolio_path_model.dart';
+import 'package:home/src/widgets/widgets.dart';
 
 class DialogDescription extends StatelessWidget {
   const DialogDescription({
-    Key? key,
     required this.portfolio,
-  }) : super(key: key);
+    super.key,
+  });
 
   final PortfolioPath portfolio;
 
   @override
   Widget build(BuildContext context) {
     final textTheme = Theme.of(context).textTheme;
+    final space = littleSpace(context).value;
     return Expanded(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
@@ -78,13 +79,13 @@ class DialogDescription extends StatelessWidget {
             textAlign: TextAlign.left,
           ),
           Wrap(
-            spacing: littleSpace(context, 5, 3, 2).value,
-            runSpacing: littleSpace(context, 5, 3, 2).value,
+            spacing: space ?? 5,
+            runSpacing: space ?? 5,
             children: List.generate(
               portfolio.tags.length,
               (index) => Container(
                 padding: EdgeInsets.all(
-                  littleSpace(context, 5, 3, 2).value,
+                  space ?? 5,
                 ),
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(5),
@@ -106,8 +107,8 @@ class DialogDescription extends StatelessWidget {
             height: defaultPadding(context).value,
           ),
           Wrap(
-            runSpacing: littleSpace(context, 5, 3, 2).value,
-            spacing: littleSpace(context, 5, 3, 2).value,
+            runSpacing: space ?? 5,
+            spacing: space ?? 5,
             children: [
               if (portfolio.linkGithub != 'null')
                 RowBotton(

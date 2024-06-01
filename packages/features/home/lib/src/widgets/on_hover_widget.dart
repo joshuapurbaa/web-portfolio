@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:sprung/sprung.dart';
 
 class OnhoverWidget extends StatefulWidget {
-  const OnhoverWidget({super.key, required this.builder});
+  const OnhoverWidget({required this.builder, super.key});
   final Widget Function(bool isHovered) builder;
 
   @override

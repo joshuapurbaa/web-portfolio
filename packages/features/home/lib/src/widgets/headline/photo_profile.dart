@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 
 class PhotoProfile extends StatelessWidget {
   const PhotoProfile({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {

@@ -3,11 +3,8 @@ import 'package:flutter/material.dart';
 
 class TextButtonIcon extends StatelessWidget {
   const TextButtonIcon({
-    Key? key,
-    required this.url,
-    required this.icon,
-    required this.label,
-  }) : super(key: key);
+    required this.url, required this.icon, required this.label, super.key,
+  });
 
   final String url;
   final String icon;

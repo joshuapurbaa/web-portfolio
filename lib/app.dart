@@ -4,7 +4,7 @@ import 'package:home/home.dart';
 import 'package:provider/provider.dart';
 import 'package:responsive_framework/responsive_framework.dart';
 
-import 'app_route.dart';
+import 'package:web_portfolio/app_route.dart';
 
 class App extends StatelessWidget {
   const App({super.key});

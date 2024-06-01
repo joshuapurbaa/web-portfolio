@@ -1,18 +1,17 @@
 import 'package:core/core.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:home/src/data/portfolio_path_model.dart';
 import 'package:home/src/providers/home_provider.dart';
+import 'package:home/src/widgets/widgets.dart';
 import 'package:provider/provider.dart';
 import 'package:responsive_framework/responsive_framework.dart';
 
-import '../../data/portfolio_path_model.dart';
-import '../widgets.dart';
-
 class DialogView extends StatefulWidget {
   const DialogView({
-    Key? key,
     required this.portfolio,
-  }) : super(key: key);
+    super.key,
+  });
 
   final PortfolioPath portfolio;
 
@@ -31,6 +30,7 @@ class _DialogViewState extends State<DialogView> {
 
   @override
   Widget build(BuildContext context) {
+    final padding = defaultPadding(context).value;
     return LayoutBuilder(
       builder: (context, constraints) {
         final maxWidth = constraints.maxWidth;
@@ -44,13 +44,13 @@ class _DialogViewState extends State<DialogView> {
           builder: (context, provider, child) {
             return AlertDialog(
               contentPadding: EdgeInsets.only(
-                top: defaultPadding(context).value,
-                left: defaultPadding(context).value,
-                right: defaultPadding(context).value,
+                top: padding ?? 15,
+                left: padding ?? 15,
+                right: padding ?? 15,
               ),
               actionsPadding: EdgeInsets.only(
-                right: defaultPadding(context).value,
-                bottom: defaultPadding(context).value,
+                right: padding ?? 15,
+                bottom: padding ?? 15,
               ),
               title: !notMobile
                   ? Text(
@@ -69,7 +69,7 @@ class _DialogViewState extends State<DialogView> {
                     Icons.close_rounded,
                     size: iconSize(context).value,
                   ),
-                )
+                ),
               ],
               content: SizedBox(
                 // check to determine alert dialog height and width
@@ -80,7 +80,6 @@ class _DialogViewState extends State<DialogView> {
                   layout: notMobile
                       ? ResponsiveRowColumnType.ROW
                       : ResponsiveRowColumnType.COLUMN,
-                  columnVerticalDirection: VerticalDirection.down,
                   children: [
                     ResponsiveRowColumnItem(
                       child: Flexible(

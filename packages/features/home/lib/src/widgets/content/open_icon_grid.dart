@@ -3,11 +3,12 @@ import 'package:flutter/material.dart';
 
 class OpenIconGrid extends StatelessWidget {
   const OpenIconGrid({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {
+    final radius = borderRadius(context).value;
     return Align(
       alignment: Alignment.topRight,
       child: Container(
@@ -16,8 +17,8 @@ class OpenIconGrid extends StatelessWidget {
         decoration: BoxDecoration(
           color: AppPalette.beige.withOpacity(0.8),
           borderRadius: BorderRadius.only(
-            topRight: Radius.circular(borderRadius(context).value),
-            bottomLeft: Radius.circular(borderRadius(context).value),
+            topRight: Radius.circular(radius ?? 12),
+            bottomLeft: Radius.circular(radius ?? 12),
           ),
         ),
         child: Icon(

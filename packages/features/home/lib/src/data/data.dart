@@ -1,5 +1,5 @@
-import 'certificate_path_model.dart';
-import 'portfolio_path_model.dart';
+import 'package:home/src/data/certificate_path_model.dart';
+import 'package:home/src/data/portfolio_path_model.dart';
 
 List<PortfolioPath> dataPortfolio = [
   PortfolioPath(
@@ -7,15 +7,15 @@ List<PortfolioPath> dataPortfolio = [
     linkApk: 'null',
     name: 'COLOK.IN',
     path: [
-      "assets/screenshot/colok_in/1.png",
-      "assets/screenshot/colok_in/2.png",
-      "assets/screenshot/colok_in/3.png",
-      "assets/screenshot/colok_in/4.png",
-      "assets/screenshot/colok_in/5.png",
-      "assets/screenshot/colok_in/6.png",
-      "assets/screenshot/colok_in/7.png",
-      "assets/screenshot/colok_in/8.png",
-      "assets/screenshot/colok_in/9.png",
+      'assets/screenshot/colok_in/1.png',
+      'assets/screenshot/colok_in/2.png',
+      'assets/screenshot/colok_in/3.png',
+      'assets/screenshot/colok_in/4.png',
+      'assets/screenshot/colok_in/5.png',
+      'assets/screenshot/colok_in/6.png',
+      'assets/screenshot/colok_in/7.png',
+      'assets/screenshot/colok_in/8.png',
+      'assets/screenshot/colok_in/9.png',
     ],
     description: 'Aplikasi Tenant SPKLU',
     features:
@@ -26,7 +26,7 @@ List<PortfolioPath> dataPortfolio = [
       'BLOC',
       'fix bugs',
       'add features',
-      'integrasi API'
+      'integrasi API',
     ],
   ),
   PortfolioPath(
@@ -34,16 +34,16 @@ List<PortfolioPath> dataPortfolio = [
     linkApk: 'null',
     name: 'PLN Click',
     path: [
-      "assets/screenshot/pln_click/1.png",
-      "assets/screenshot/pln_click/2.png",
-      "assets/screenshot/pln_click/3.png",
-      "assets/screenshot/pln_click/4.png",
-      "assets/screenshot/pln_click/5.png",
-      "assets/screenshot/pln_click/6.png",
-      "assets/screenshot/pln_click/7.png",
-      "assets/screenshot/pln_click/8.png",
-      "assets/screenshot/pln_click/9.png",
-      "assets/screenshot/pln_click/10.png",
+      'assets/screenshot/pln_click/1.png',
+      'assets/screenshot/pln_click/2.png',
+      'assets/screenshot/pln_click/3.png',
+      'assets/screenshot/pln_click/4.png',
+      'assets/screenshot/pln_click/5.png',
+      'assets/screenshot/pln_click/6.png',
+      'assets/screenshot/pln_click/7.png',
+      'assets/screenshot/pln_click/8.png',
+      'assets/screenshot/pln_click/9.png',
+      'assets/screenshot/pln_click/10.png',
     ],
     description: 'Aplikasi Super App karyawan PLN Seluruh Indonesia',
     features:
@@ -54,7 +54,7 @@ List<PortfolioPath> dataPortfolio = [
       'fix bugs',
       'deploy to playstore',
       'add features',
-      'integrasi API'
+      'integrasi API',
     ],
   ),
   PortfolioPath(
@@ -62,12 +62,12 @@ List<PortfolioPath> dataPortfolio = [
     linkApk: 'null',
     name: 'Barista',
     path: [
-      "assets/screenshot/barista/1.png",
-      "assets/screenshot/barista/2.png",
-      "assets/screenshot/barista/3.png",
-      "assets/screenshot/barista/4.png",
-      "assets/screenshot/barista/5.png",
-      "assets/screenshot/barista/6.png",
+      'assets/screenshot/barista/1.png',
+      'assets/screenshot/barista/2.png',
+      'assets/screenshot/barista/3.png',
+      'assets/screenshot/barista/4.png',
+      'assets/screenshot/barista/5.png',
+      'assets/screenshot/barista/6.png',
     ],
     description: 'Manajemen agenda Direksi PLN',
     features:
@@ -82,14 +82,14 @@ List<PortfolioPath> dataPortfolio = [
   PortfolioPath(
     name: 'Tempat Makan',
     path: [
-      "assets/screenshot/tempat_makan/1.png",
-      "assets/screenshot/tempat_makan/2.png",
-      "assets/screenshot/tempat_makan/3.png",
-      "assets/screenshot/tempat_makan/4.png",
-      "assets/screenshot/tempat_makan/5.png",
-      "assets/screenshot/tempat_makan/6.png",
-      "assets/screenshot/tempat_makan/7.png",
-      "assets/screenshot/tempat_makan/8.png",
+      'assets/screenshot/tempat_makan/1.png',
+      'assets/screenshot/tempat_makan/2.png',
+      'assets/screenshot/tempat_makan/3.png',
+      'assets/screenshot/tempat_makan/4.png',
+      'assets/screenshot/tempat_makan/5.png',
+      'assets/screenshot/tempat_makan/6.png',
+      'assets/screenshot/tempat_makan/7.png',
+      'assets/screenshot/tempat_makan/8.png',
     ],
     description: 'Aplikasi daftar restoran',
     features:
@@ -106,19 +106,19 @@ List<PortfolioPath> dataPortfolio = [
   PortfolioPath(
     name: 'PLN Mobile\nClone',
     path: [
-      "assets/screenshot/pln/1.png",
-      "assets/screenshot/pln/2.png",
-      "assets/screenshot/pln/3.png",
-      "assets/screenshot/pln/4.png",
-      "assets/screenshot/pln/5.png",
-      "assets/screenshot/pln/6.png",
-      "assets/screenshot/pln/7.png",
-      "assets/screenshot/pln/8.png",
-      "assets/screenshot/pln/9.png",
-      "assets/screenshot/pln/10.png",
-      "assets/screenshot/pln/11.png",
-      "assets/screenshot/pln/12.png",
-      "assets/screenshot/pln/13.png",
+      'assets/screenshot/pln/1.png',
+      'assets/screenshot/pln/2.png',
+      'assets/screenshot/pln/3.png',
+      'assets/screenshot/pln/4.png',
+      'assets/screenshot/pln/5.png',
+      'assets/screenshot/pln/6.png',
+      'assets/screenshot/pln/7.png',
+      'assets/screenshot/pln/8.png',
+      'assets/screenshot/pln/9.png',
+      'assets/screenshot/pln/10.png',
+      'assets/screenshot/pln/11.png',
+      'assets/screenshot/pln/12.png',
+      'assets/screenshot/pln/13.png',
     ],
     description: 'Clonning Aplikasi menggunakan Screenshot',
     features:
@@ -139,8 +139,8 @@ List<PortfolioPath> dataPortfolio = [
   PortfolioPath(
     name: 'DANA Clone',
     path: [
-      "assets/screenshot/dana/1.png",
-      "assets/screenshot/dana/2.png",
+      'assets/screenshot/dana/1.png',
+      'assets/screenshot/dana/2.png',
     ],
     description: 'Clonning Aplikasi menggunakan Screenshot',
     features: 'Home Screen',
@@ -158,9 +158,9 @@ List<PortfolioPath> dataPortfolio = [
   PortfolioPath(
     name: 'Alterra Chat',
     path: [
-      "assets/screenshot/alterra/1.png",
-      "assets/screenshot/alterra/2.png",
-      "assets/screenshot/alterra/3.png",
+      'assets/screenshot/alterra/1.png',
+      'assets/screenshot/alterra/2.png',
+      'assets/screenshot/alterra/3.png',
     ],
     description: 'Aplikasi kirim dan menerima pesan real-time',
     features: 'Sign In, Sign Up, Chat Room, and Sign Out screen',
@@ -178,8 +178,8 @@ List<PortfolioPath> dataPortfolio = [
   PortfolioPath(
     name: 'Ebook',
     path: [
-      "assets/screenshot/ebook/1.png",
-      "assets/screenshot/ebook/2.png",
+      'assets/screenshot/ebook/1.png',
+      'assets/screenshot/ebook/2.png',
     ],
     description: 'Slicing dari design Figma',
     features: 'Home and Detail Screen',
@@ -195,8 +195,8 @@ List<PortfolioPath> dataPortfolio = [
   PortfolioPath(
     name: 'Food App',
     path: [
-      "assets/screenshot/food_app/1.png",
-      "assets/screenshot/food_app/2.png"
+      'assets/screenshot/food_app/1.png',
+      'assets/screenshot/food_app/2.png',
     ],
     description: 'Slicing dari design Figma',
     features: 'Home and Detail Screen',
@@ -212,9 +212,9 @@ List<PortfolioPath> dataPortfolio = [
   PortfolioPath(
     name: 'Saving App',
     path: [
-      "assets/screenshot/saving/1.png",
-      "assets/screenshot/saving/2.png",
-      "assets/screenshot/saving/3.png"
+      'assets/screenshot/saving/1.png',
+      'assets/screenshot/saving/2.png',
+      'assets/screenshot/saving/3.png',
     ],
     description: 'Slicing dari design Figma',
     features: 'Onboarding, Home and Portfolio Screen',
@@ -229,7 +229,7 @@ List<PortfolioPath> dataPortfolio = [
   PortfolioPath(
     name: 'Telkomsel App\nClone',
     path: [
-      "assets/screenshot/telkomsel/1.png",
+      'assets/screenshot/telkomsel/1.png',
     ],
     description: 'Clonning Aplikasi menggunakan Screenshot',
     features: 'Home Screen',
@@ -244,8 +244,8 @@ List<PortfolioPath> dataPortfolio = [
   PortfolioPath(
       name: 'Udemy Course',
       path: [
-        "assets/screenshot/udemy/1.png",
-        "assets/screenshot/udemy/2.png",
+        'assets/screenshot/udemy/1.png',
+        'assets/screenshot/udemy/2.png',
       ],
       description:
           'Membuat video tutorial tentang development aplikasi menggunakan Flutter',
@@ -257,7 +257,7 @@ List<PortfolioPath> dataPortfolio = [
       linkGithub: 'null',
       linkApk: 'null',
       linkOther:
-          'https://www.udemy.com/course/flutter-redindwhite-academy-by-joshua/?instructorPreviewMode=guest'),
+          'https://www.udemy.com/course/flutter-redindwhite-academy-by-joshua/?instructorPreviewMode=guest',),
 ];
 
 List<CertificatePath> certificateData = [
