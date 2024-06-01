@@ -62,7 +62,7 @@ class _ContentState extends State<Content> {
                         ),
                 ),
                 OnhoverWidget(
-                  builder: (isHovered) {
+                  builder: ({required isHovered}) {
                     if (isHovered) {
                       return GridHover(
                         portfolio: portfolio,

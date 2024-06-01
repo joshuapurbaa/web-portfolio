@@ -1,14 +1,18 @@
 import 'package:flutter/material.dart';
 
 class FadingEffect extends CustomPainter {
-
   FadingEffect({required this.begin, required this.end});
   final AlignmentGeometry begin;
   final AlignmentGeometry end;
   @override
   void paint(Canvas canvas, Size size) {
-    final rect =
-        Rect.fromPoints(const Offset(0, 0), Offset(size.width, size.height));
+    final rect = Rect.fromPoints(
+      Offset.zero,
+      Offset(
+        size.width,
+        size.height,
+      ),
+    );
     final lg = LinearGradient(
       begin: begin,
       end: end,
