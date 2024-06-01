@@ -52,13 +52,17 @@ class _ContentState extends State<Content> {
                           heightGlass: heightGlass ?? 400,
                           startGradient: 0.9,
                           endGradient: 0.1,
-                          child: GridImage(portfolio: portfolio),
+                          child: GridImage(
+                            portfolio: portfolio,
+                          ),
                         )
                       : GlassMorphismMobile(
                           heightGlass: heightGlass ?? 250,
                           startGradient: 0.9,
                           endGradient: 0.1,
-                          child: GridImage(portfolio: portfolio),
+                          child: GridImage(
+                            portfolio: portfolio,
+                          ),
                         ),
                 ),
                 OnhoverWidget(

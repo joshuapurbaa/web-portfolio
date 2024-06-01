@@ -24,14 +24,6 @@ class GlassMorphism extends StatelessWidget {
         height: heightGlass,
         alignment: Alignment.center,
         decoration: BoxDecoration(
-          image: const DecorationImage(
-            image: AssetImage(
-              'assets/noiseBg.png',
-              package: 'home',
-            ),
-            fit: BoxFit.cover,
-            opacity: 0.05,
-          ),
           gradient: LinearGradient(
             colors: [
               Colors.white.withOpacity(startGradient),
