@@ -20,7 +20,9 @@ class LeftIconDialogView extends StatelessWidget {
             child: IconButton(
               onPressed: () {
                 provider.dialogViewController.previousPage(
-                  duration: const Duration(milliseconds: 300),
+                  duration: const Duration(
+                    milliseconds: 300,
+                  ),
                   curve: Sprung.criticallyDamped,
                 );
               },
