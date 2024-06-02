@@ -4,6 +4,33 @@ import 'package:home/src/data/portfolio_path_model.dart';
 List<PortfolioPath> dataPortfolio = [
   PortfolioPath(
     linkGithub: 'null',
+    linkApk:
+        'https://drive.google.com/file/d/1Weruq0qgE8NQUtXJNvgd5XFXJtUIzFJi/view?usp=sharing',
+    name: 'Budget Intelli',
+    path: [
+      'assets/screenshot/budget-intelli/1.png',
+      'assets/screenshot/budget-intelli/2.png',
+      'assets/screenshot/budget-intelli/3.png',
+      'assets/screenshot/budget-intelli/4.png',
+      'assets/screenshot/budget-intelli/5.png',
+      'assets/screenshot/budget-intelli/6.png',
+      'assets/screenshot/budget-intelli/7.png',
+      'assets/screenshot/budget-intelli/8.png',
+      'assets/screenshot/budget-intelli/9.png',
+    ],
+    description: 'Aplikasi Budgeting dan Expense Tracker',
+    features:
+        'Offline mode, Dark and Light mode, Membuat budget, grup kategori, item kategori, transaksi, dll',
+    tags: [
+      'From scratch',
+      'Project Pribadi',
+      'BLOC',
+      'Clean Architecture',
+      'Penyimpanan lokal',
+    ],
+  ),
+  PortfolioPath(
+    linkGithub: 'null',
     linkApk: 'null',
     name: 'COLOK.IN',
     path: [
@@ -242,22 +269,23 @@ List<PortfolioPath> dataPortfolio = [
         'https://drive.google.com/file/d/1JeylQCsM9cycDAKnxG-0hrzZ_KiAYlar/view?usp=share_link',
   ),
   PortfolioPath(
-      name: 'Udemy Course',
-      path: [
-        'assets/screenshot/udemy/1.png',
-        'assets/screenshot/udemy/2.png',
-      ],
-      description:
-          'Membuat video tutorial tentang development aplikasi menggunakan Flutter',
-      features: 'Screen video capture, audio explanation',
-      tags: [
-        'courses',
-        'tutorial',
-      ],
-      linkGithub: 'null',
-      linkApk: 'null',
-      linkOther:
-          'https://www.udemy.com/course/flutter-redindwhite-academy-by-joshua/?instructorPreviewMode=guest',),
+    name: 'Udemy Course',
+    path: [
+      'assets/screenshot/udemy/1.png',
+      'assets/screenshot/udemy/2.png',
+    ],
+    description:
+        'Membuat video tutorial tentang development aplikasi menggunakan Flutter',
+    features: 'Screen video capture, audio explanation',
+    tags: [
+      'courses',
+      'tutorial',
+    ],
+    linkGithub: 'null',
+    linkApk: 'null',
+    linkOther:
+        'https://www.udemy.com/course/flutter-redindwhite-academy-by-joshua/?instructorPreviewMode=guest',
+  ),
 ];
 
 List<CertificatePath> certificateData = [

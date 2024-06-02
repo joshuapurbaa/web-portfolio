@@ -26,6 +26,7 @@ flutter:
   assets:
     - assets/
     - assets/screenshot/alterra/
+    - assets/screenshot/budget-intelli/
     - assets/screenshot/dana/
     - assets/screenshot/ebook/
     - assets/screenshot/food_app/

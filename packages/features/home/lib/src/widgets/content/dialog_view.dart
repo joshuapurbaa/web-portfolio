@@ -108,6 +108,19 @@ class _DialogViewState extends State<DialogView> {
                                   itemBuilder: (context, index) {
                                     final onUdemy = widget.portfolio.path[index]
                                         .contains('udemy');
+                                    final onBudgetIntelli = widget
+                                        .portfolio.path[index]
+                                        .contains('budget-intelli');
+
+                                    if (onBudgetIntelli) {
+                                      return Image.asset(
+                                        widget.portfolio.path[index],
+                                        package: 'home',
+                                        // cacheWidth: onUdemy ? 820 : 388,
+                                        // cacheHeight: onUdemy ? 461 : 820,
+                                      );
+                                    }
+
                                     return Image.asset(
                                       widget.portfolio.path[index],
                                       package: 'home',
