@@ -130,17 +130,17 @@ class DialogDescription extends StatelessWidget {
                     );
                   },
                 ),
-              if (portfolio.name == 'Alterra Chat')
-                RowBotton(
-                  icon: 'assets/google_play.png',
-                  text: 'Play Store',
-                  onPressed: () {
-                    UrlLauncher.execute(
-                      Strings.playStoreAlterra,
-                    );
-                  },
-                ),
-              if (portfolio.name == 'PLN Click')
+              // if (portfolio.name == 'Alterra Chat')
+              //   RowBotton(
+              //     icon: 'assets/google_play.png',
+              //     text: 'Play Store',
+              //     onPressed: () {
+              //       UrlLauncher.execute(
+              //         Strings.playStoreAlterra,
+              //       );
+              //     },
+              //   ),
+              if (portfolio.name == 'PLN Click') ...[
                 RowBotton(
                   icon: 'assets/google_play.png',
                   text: 'Play Store',
@@ -150,6 +150,36 @@ class DialogDescription extends StatelessWidget {
                     );
                   },
                 ),
+                RowBotton(
+                  icon: 'assets/app-store.png',
+                  text: 'App Store',
+                  onPressed: () {
+                    UrlLauncher.execute(
+                      Strings.appStorePlnClick,
+                    );
+                  },
+                ),
+              ],
+              if (portfolio.name == 'Barista PLN') ...[
+                RowBotton(
+                  icon: 'assets/google_play.png',
+                  text: 'Play Store',
+                  onPressed: () {
+                    UrlLauncher.execute(
+                      Strings.playStoreBarista,
+                    );
+                  },
+                ),
+                RowBotton(
+                  icon: 'assets/app-store.png',
+                  text: 'App Store',
+                  onPressed: () {
+                    UrlLauncher.execute(
+                      Strings.appStoreBarista,
+                    );
+                  },
+                ),
+              ],
               if (portfolio.linkOther != null)
                 RowBotton(
                   icon: 'assets/link.png',

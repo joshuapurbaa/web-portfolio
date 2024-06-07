@@ -32,33 +32,6 @@ List<PortfolioPath> dataPortfolio = [
   PortfolioPath(
     linkGithub: 'null',
     linkApk: 'null',
-    name: 'COLOK.IN',
-    path: [
-      'assets/screenshot/colok_in/1.png',
-      'assets/screenshot/colok_in/2.png',
-      'assets/screenshot/colok_in/3.png',
-      'assets/screenshot/colok_in/4.png',
-      'assets/screenshot/colok_in/5.png',
-      'assets/screenshot/colok_in/6.png',
-      'assets/screenshot/colok_in/7.png',
-      'assets/screenshot/colok_in/8.png',
-      'assets/screenshot/colok_in/9.png',
-    ],
-    description: 'Aplikasi Tenant SPKLU',
-    features:
-        'Login, Logout, Session Timeout, Edit password, Add Charger Point, Add Card, Location (Google Map)',
-    tags: [
-      'enhance',
-      'refactor code',
-      'BLOC',
-      'fix bugs',
-      'add features',
-      'integrasi API',
-    ],
-  ),
-  PortfolioPath(
-    linkGithub: 'null',
-    linkApk: 'null',
     name: 'PLN Click',
     path: [
       'assets/screenshot/pln_click/1.png',
@@ -87,7 +60,7 @@ List<PortfolioPath> dataPortfolio = [
   PortfolioPath(
     linkGithub: 'null',
     linkApk: 'null',
-    name: 'Barista',
+    name: 'Barista PLN',
     path: [
       'assets/screenshot/barista/1.png',
       'assets/screenshot/barista/2.png',
@@ -107,28 +80,31 @@ List<PortfolioPath> dataPortfolio = [
     ],
   ),
   PortfolioPath(
-    name: 'Tempat Makan',
-    path: [
-      'assets/screenshot/tempat_makan/1.png',
-      'assets/screenshot/tempat_makan/2.png',
-      'assets/screenshot/tempat_makan/3.png',
-      'assets/screenshot/tempat_makan/4.png',
-      'assets/screenshot/tempat_makan/5.png',
-      'assets/screenshot/tempat_makan/6.png',
-      'assets/screenshot/tempat_makan/7.png',
-      'assets/screenshot/tempat_makan/8.png',
-    ],
-    description: 'Aplikasi daftar restoran',
-    features:
-        'Sign In, Onboarding, Home, Search, Profile, Detail Screen, Review tab, dan Add review',
-    tags: [
-      'from scratch',
-      'clean architecture',
-      'provider',
-      'Api',
-    ],
-    linkGithub: 'https://github.com/joshuapurbaa/tempat-makan',
+    linkGithub: 'null',
     linkApk: 'null',
+    name: 'COLOK.IN',
+    path: [
+      'assets/screenshot/colok_in/1.png',
+      'assets/screenshot/colok_in/2.png',
+      'assets/screenshot/colok_in/3.png',
+      'assets/screenshot/colok_in/4.png',
+      'assets/screenshot/colok_in/5.png',
+      'assets/screenshot/colok_in/6.png',
+      'assets/screenshot/colok_in/7.png',
+      'assets/screenshot/colok_in/8.png',
+      'assets/screenshot/colok_in/9.png',
+    ],
+    description: 'Aplikasi Tenant SPKLU',
+    features:
+        'Login, Logout, Session Timeout, Edit password, Add Charger Point, Add Card, Location (Google Map)',
+    tags: [
+      'enhance',
+      'refactor code',
+      'BLOC',
+      'fix bugs',
+      'add features',
+      'integrasi API',
+    ],
   ),
   PortfolioPath(
     name: 'PLN Mobile\nClone',
@@ -162,6 +138,30 @@ List<PortfolioPath> dataPortfolio = [
     linkGithub: 'https://github.com/joshuapurbaa/pln_mobile_clone',
     linkApk:
         'https://drive.google.com/file/d/1hxcV-jG7eGoSkKmjQYisvxmPbhftPGRK/view?usp=share_link',
+  ),
+  PortfolioPath(
+    name: 'Tempat Makan',
+    path: [
+      'assets/screenshot/tempat_makan/1.png',
+      'assets/screenshot/tempat_makan/2.png',
+      'assets/screenshot/tempat_makan/3.png',
+      'assets/screenshot/tempat_makan/4.png',
+      'assets/screenshot/tempat_makan/5.png',
+      'assets/screenshot/tempat_makan/6.png',
+      'assets/screenshot/tempat_makan/7.png',
+      'assets/screenshot/tempat_makan/8.png',
+    ],
+    description: 'Aplikasi daftar restoran',
+    features:
+        'Sign In, Onboarding, Home, Search, Profile, Detail Screen, Review tab, dan Add review',
+    tags: [
+      'from scratch',
+      'clean architecture',
+      'provider',
+      'Api',
+    ],
+    linkGithub: 'https://github.com/joshuapurbaa/tempat-makan',
+    linkApk: 'null',
   ),
   PortfolioPath(
     name: 'DANA Clone',

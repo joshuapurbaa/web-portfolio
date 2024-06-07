@@ -15,6 +15,12 @@ class Strings {
 
   static String playStorePlnClick =
       'https://play.google.com/store/apps/details?id=com.icon.plnclick';
+  static String appStorePlnClick =
+      'https://apps.apple.com/us/app/pln-click/id1669242441';
+  static String playStoreBarista =
+      'https://play.google.com/store/apps/details?id=id.co.pln.barista';
+  static String appStoreBarista =
+      'https://apps.apple.com/us/app/barista-pln/id6502890885';
   static String wa = 'https://wa.me/6282281221123';
   static String github = 'https://github.com/joshuapurbaa';
   static String linkedIn =
