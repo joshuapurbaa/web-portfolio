@@ -74,4 +74,16 @@ class AppTheme {
       elevatedButtonTheme: const ElevatedButtonThemeData(),
     );
   }
+
+  static ThemeData dark() {
+    return ThemeData(
+      brightness: Brightness.dark,
+      appBarTheme: const AppBarTheme(),
+      textTheme: lighTextTheme,
+      inputDecorationTheme: const InputDecorationTheme(),
+      bottomSheetTheme: const BottomSheetThemeData(),
+      textButtonTheme: const TextButtonThemeData(),
+      elevatedButtonTheme: const ElevatedButtonThemeData(),
+    );
+  }
 }

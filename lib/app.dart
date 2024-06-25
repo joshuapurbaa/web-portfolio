@@ -14,7 +14,7 @@ class App extends StatelessWidget {
     return ChangeNotifierProvider(
       create: (context) => HomeProvider(),
       child: MaterialApp.router(
-        theme: AppTheme.light(),
+        theme: AppTheme.dark(),
         debugShowCheckedModeBanner: false,
         builder: (context, child) => ResponsiveWrapper.builder(
           breakpoints: [
