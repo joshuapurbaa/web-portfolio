@@ -15,6 +15,8 @@ class Strings {
 
   static String playStorePlnClick =
       'https://play.google.com/store/apps/details?id=com.icon.plnclick';
+  static String playStoreBudgetIntelli =
+      'https://play.google.com/store/apps/details?id=com.porseatechnology.budgetIntelli';
   static String appStorePlnClick =
       'https://apps.apple.com/us/app/pln-click/id1669242441';
   static String playStoreBarista =

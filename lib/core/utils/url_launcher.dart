@@ -5,7 +5,9 @@ class UrlLauncher {
 
   static Future<void> execute(String uri) async {
     final url = Uri.parse(uri);
-    if (!await launchUrl(url)) {
+    if (await canLaunchUrl(url)) {
+      await launchUrl(url);
+    } else {
       throw Exception('Could not launch $url');
     }
   }

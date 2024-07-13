@@ -138,6 +138,17 @@ class DialogDescription extends StatelessWidget {
               //       );
               //     },
               //   ),
+              if (portfolio.name == 'Budget Intelli') ...[
+                RowBotton(
+                  icon: 'assets/google_play.png',
+                  text: 'Play Store',
+                  onPressed: () {
+                    UrlLauncher.execute(
+                      Strings.playStoreBudgetIntelli,
+                    );
+                  },
+                ),
+              ],
               if (portfolio.name == 'PLN Click') ...[
                 RowBotton(
                   icon: 'assets/google_play.png',

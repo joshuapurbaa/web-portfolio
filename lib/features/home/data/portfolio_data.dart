@@ -3,8 +3,7 @@ import 'package:web_portfolio/features/home/data/data.dart';
 List<PortfolioPath> portfolioData = [
   PortfolioPath(
     linkGithub: 'null',
-    linkApk:
-        'https://drive.google.com/file/d/1Weruq0qgE8NQUtXJNvgd5XFXJtUIzFJi/view?usp=sharing',
+    linkApk: 'null',
     name: 'Budget Intelli',
     path: [
       'assets/screenshot/budget-intelli/1.png',
