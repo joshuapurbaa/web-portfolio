@@ -1,10 +1,10 @@
-import 'package:core/core.dart';
 import 'package:flutter/material.dart';
-import 'package:home/home.dart';
 import 'package:provider/provider.dart';
 import 'package:responsive_framework/responsive_framework.dart';
 
 import 'package:web_portfolio/app_route.dart';
+import 'package:web_portfolio/core/core.dart';
+import 'package:web_portfolio/features/home/controllers/controllers.dart';
 
 class App extends StatelessWidget {
   const App({super.key});

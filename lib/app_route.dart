@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:home/home.dart';
+import 'package:web_portfolio/features/home/view/view.dart';
 
 enum Routes {
   root('/'),
