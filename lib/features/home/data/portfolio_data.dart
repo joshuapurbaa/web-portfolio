@@ -2,7 +2,7 @@ import 'package:web_portfolio/features/home/data/data.dart';
 
 List<PortfolioPath> portfolioData = [
   PortfolioPath(
-    linkGithub: 'null',
+    linkGithub: 'https://github.com/joshuapurbaa/budget_intelli',
     linkApk: 'null',
     name: 'Budget Intelli',
     path: [
@@ -16,15 +16,15 @@ List<PortfolioPath> portfolioData = [
       'assets/screenshot/budget-intelli/8.png',
       'assets/screenshot/budget-intelli/9.png',
     ],
-    description: 'Aplikasi Budgeting dan Expense Tracker',
+    description: 'Budgeting and Expense Tracker App',
     features:
-        'Offline mode, Dark and Light mode, Membuat budget, grup kategori, item kategori, transaksi, dll',
+        'Offline mode, Dark and Light mode, Create budget, category group, category item, transactions, etc',
     tags: [
       'From scratch',
-      'Project Pribadi',
+      'Self Project',
       'BLOC',
       'Clean Architecture',
-      'Penyimpanan lokal',
+      'Local Storage',
     ],
   ),
   PortfolioPath(
@@ -43,9 +43,9 @@ List<PortfolioPath> portfolioData = [
       'assets/screenshot/pln_click/9.png',
       'assets/screenshot/pln_click/10.png',
     ],
-    description: 'Aplikasi Super App karyawan PLN Seluruh Indonesia',
+    description: 'Super App for PLN employees throughout Indonesia',
     features:
-        'Clock In, Clock Out, Melihat Surat Masuk, Approval, Shift Management, SPPD',
+        'Clock In, Clock Out, View Incoming Letters, Approval, Shift Management, SPPD',
     tags: [
       'enhance',
       'deploy to appstore',
@@ -67,7 +67,7 @@ List<PortfolioPath> portfolioData = [
       'assets/screenshot/barista/5.png',
       'assets/screenshot/barista/6.png',
     ],
-    description: 'Manajemen agenda Direksi PLN',
+    description: 'PLN Directors Agenda Management',
     features:
         'Login with SSO, Share agenda with Whats Up, Melihat detail agenda',
     tags: [
@@ -92,7 +92,7 @@ List<PortfolioPath> portfolioData = [
       'assets/screenshot/colok_in/8.png',
       'assets/screenshot/colok_in/9.png',
     ],
-    description: 'Aplikasi Tenant SPKLU',
+    description: 'Tenant Application for SPKLU',
     features:
         'Login, Logout, Session Timeout, Edit password, Add Charger Point, Add Card, Location (Google Map)',
     tags: [
@@ -121,7 +121,7 @@ List<PortfolioPath> portfolioData = [
       'assets/screenshot/pln/12.png',
       'assets/screenshot/pln/13.png',
     ],
-    description: 'Clonning Aplikasi menggunakan Screenshot',
+    description: 'Cloning Application using Screenshot',
     features:
         'Onboarding, Sign In, Lupa Password, Sign Up, Home, Profile, Detail Screen',
     tags: [
@@ -149,7 +149,7 @@ List<PortfolioPath> portfolioData = [
       'assets/screenshot/tempat_makan/7.png',
       'assets/screenshot/tempat_makan/8.png',
     ],
-    description: 'Aplikasi daftar restoran',
+    description: 'Restaurant listing application',
     features:
         'Sign In, Onboarding, Home, Search, Profile, Detail Screen, Review tab, dan Add review',
     tags: [
@@ -167,7 +167,7 @@ List<PortfolioPath> portfolioData = [
       'assets/screenshot/dana/1.png',
       'assets/screenshot/dana/2.png',
     ],
-    description: 'Clonning Aplikasi menggunakan Screenshot',
+    description: 'Cloning Application using Screenshot',
     features: 'Home Screen',
     tags: [
       'from scratch',
@@ -187,7 +187,7 @@ List<PortfolioPath> portfolioData = [
       'assets/screenshot/alterra/2.png',
       'assets/screenshot/alterra/3.png',
     ],
-    description: 'Aplikasi kirim dan menerima pesan real-time',
+    description: 'Real-time messaging application',
     features: 'Sign In, Sign Up, Chat Room, and Sign Out screen',
     tags: [
       'from scratch',
@@ -241,7 +241,7 @@ List<PortfolioPath> portfolioData = [
       'assets/screenshot/saving/2.png',
       'assets/screenshot/saving/3.png',
     ],
-    description: 'Slicing dari design Figma',
+    description: 'Slicing from Figma design',
     features: 'Onboarding, Home and Portfolio Screen',
     tags: [
       'from scratch',
@@ -256,7 +256,7 @@ List<PortfolioPath> portfolioData = [
     path: [
       'assets/screenshot/telkomsel/1.png',
     ],
-    description: 'Clonning Aplikasi menggunakan Screenshot',
+    description: 'Cloning Application using Screenshot',
     features: 'Home Screen',
     tags: [
       'from scratch',
@@ -273,7 +273,7 @@ List<PortfolioPath> portfolioData = [
       'assets/screenshot/udemy/2.png',
     ],
     description:
-        'Membuat video tutorial tentang development aplikasi menggunakan Flutter',
+        'Creating video tutorials about application development using Flutter',
     features: 'Screen video capture, audio explanation',
     tags: [
       'courses',
